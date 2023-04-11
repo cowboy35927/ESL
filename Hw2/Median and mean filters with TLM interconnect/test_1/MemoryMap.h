@@ -2,9 +2,7 @@
 #define MEMORYMAP_H_
 using Addr = sc_dt::uint64;
 
-const int RAM_MM_BASE = 0x00000000;
-const int RAM_MM_SIZE = 0x00400000;
-const int RAM_MM_MASK = 0x003fffff;
+
 
 // Sobel filter Memory Map
 // Used between SimpleBus & SobelFilter

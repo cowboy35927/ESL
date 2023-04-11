@@ -92,14 +92,6 @@ void Median_MeanFilter::do_filter() {
         val[1][v * 3 + u] = i_g.read();
         val[2][v * 3 + u] = i_b.read();
         //wait(1 * CLOCK_PERIOD, SC_NS);
-        // Increment local time with delay returned from b_transport()
-        //cout<<"dsrfksdjf"<<delay<<endl;
-        //t_skt->b_transport( *trans, delay );
-       // m_qk.inc( delay );
-        // Check if synchronize is necessary
-       // cout<<"dsrfksdjasdfasdfasdfasdf:"<<delay<<endl;
-       // if (m_qk.need_sync()) m_qk.sync();
-        // cout << "Now at " << sc_time_stamp() << " MEAN " << endl; // print current sc_time
       }
     }
     

@@ -67,7 +67,7 @@ include CMakeFiles/check.dir/compiler_depend.make
 include CMakeFiles/check.dir/progress.make
 
 CMakeFiles/check:
-	cd "/home/user/ee6470/docker-images/EE6470/ESL/Hw2/Median and mean filters with quantum keeper/test_2" && diff -s /home/user/ee6470/docker-images/EE6470/ESL/Hw2/Median\ and\ mean\ filters\ with\ quantum\ keeper/test_2/build/out.bmp golden/lena_std_short_sobel.bmp
+	cd "/home/user/ee6470/docker-images/EE6470/ESL/Hw2/Median and mean filters with quantum keeper/test_2" && diff -s /home/user/ee6470/docker-images/EE6470/ESL/Hw2/Median\ and\ mean\ filters\ with\ quantum\ keeper/test_2/build/out.bmp golden/peppers_color.bmp
 
 check: CMakeFiles/check
 check: CMakeFiles/check.dir/build.make
