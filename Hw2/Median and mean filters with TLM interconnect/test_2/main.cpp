@@ -35,7 +35,12 @@ int sc_main(int argc, char **argv) {
   tb.read_bmp(argv[1]);
   sc_start();
   std::cout << "Simulated time == " << sc_core::sc_time_stamp() << std::endl;
-  cout<<"counter:"<<bus.counter<<endl;
+  cout<<"Simplebus:"<<endl;
+  cout<<"the number of read/write to the target module:"<<bus.counter<<endl;
+  cout<<"Initiator socket:"<<endl;
+  cout<<"read:"<<tb.initiator.count_read<<endl;
+  cout<<"write:"<<tb.initiator.count_write<<endl;
+  cout<<"result:"<<tb.initiator.count_read+tb.initiator.count_write<<endl;
   tb.write_bmp(argv[2]);
 
   return 0;

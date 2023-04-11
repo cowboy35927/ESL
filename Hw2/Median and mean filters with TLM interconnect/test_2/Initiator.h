@@ -12,7 +12,8 @@ public:
   tlm_utils::tlm_quantumkeeper m_qk;
   SC_HAS_PROCESS(Initiator);
   Initiator(sc_module_name n);
-
+  int count_read=0;
+  int count_write=0;
   int read_from_socket(unsigned long int addr, unsigned char mask[],
                        unsigned char rdata[], int dataLen, sc_time& delay);
 

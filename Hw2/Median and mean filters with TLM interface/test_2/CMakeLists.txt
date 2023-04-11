@@ -44,7 +44,7 @@ add_custom_target(run
 
 # Compare output & golden
 add_custom_target(check
-	COMMAND diff -s ${CMAKE_BINARY_DIR}/${OUT_FILE} golden/lena_std_short_sobel.bmp
+	COMMAND diff -s ${CMAKE_BINARY_DIR}/${OUT_FILE} golden/peppers_color.bmp
 	DEPENDS run
 	WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}	
 )

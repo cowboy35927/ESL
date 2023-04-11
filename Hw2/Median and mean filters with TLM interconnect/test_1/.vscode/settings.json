@@ -3,6 +3,7 @@
         "iomanip": "cpp",
         "atomic": "cpp",
         "memory": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iostream": "cpp"
     }
 }

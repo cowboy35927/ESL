@@ -16,7 +16,7 @@ int Initiator::read_from_socket(unsigned long int addr, unsigned char mask[],
 
   // Transport.
   do_trans(trans,delay);
-
+  count_read++;
   /* For now just simple non-zero return code on error */
   return trans.is_response_ok() ? 0 : -1;
 
@@ -36,7 +36,7 @@ int Initiator::write_to_socket(unsigned long int addr, unsigned char mask[],
 
   // Transport.
   do_trans(trans,delay);
-
+  count_write++;
   /* For now just simple non-zero return code on error */
   return trans.is_response_ok() ? 0 : -1;
 
