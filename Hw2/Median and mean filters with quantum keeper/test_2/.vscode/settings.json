@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "memory": "cpp",
+        "vector": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "xutility": "cpp",
+        "streambuf": "cpp"
+    }
+}
