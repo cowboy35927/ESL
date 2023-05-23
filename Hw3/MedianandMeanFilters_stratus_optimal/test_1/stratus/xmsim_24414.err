@@ -1,0 +1,82 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /home/m111/m111064503/EE6470/Hw3/sobel_stratus_optimal/stratus/bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/run.lnx8664.22.03.d/ws26_24414/xmsim.args
+        +BDW_VLOG_DUMPFILE+
+        +hubSetOption+libdef=bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/sim_FLAT_UNROLL_ALL_FAST_V.so,argv=../lena_std_short.bmp%out.bmp
+        +hubSetOption+bdr=bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/sim.bdr
+        +xm64bit
+        +incdir+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib
+        +incdir+bdw_work/wrappers
+        +access+rw
+        +loadpli1=/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+        +xminput+bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/ncverilog.do
+        +xmlibdirname+bdw_work/sims/FLAT_UNROLL_ALL_FAST_V
+        +libext+.v
+        +define+ioConfig
+        +define+BDW_RTL_SobelFilter_FLAT_UNROLL_ALL_FAST
+        +nowarn+LIBNOU
+        -amsdlibdir bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/AMSD
+        -INPUT bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/ncverilog.do
+        -NOWARN LIBNOU
+        -MESSAGES
+        +EMGRLOG bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/bdw_sim_verilog.log
+        -XLSTIME 1683960875
+        -XLKEEP
+        -XLMODE bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/run.lnx8664.22.03.d
+        -RUNMODE
+        -CDSLIB bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/run.lnx8664.22.03.d/cds.lib
+        -HDLVAR bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/run.lnx8664.22.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	22.03-s003
+        -XLNAME ./bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/run.lnx8664.22.03.d/ws26_24414
+    -CHECK_VERSION TOOL:	xrun(64)	22.03-s003
+    -LOG_FD 4
+    -LOG_FD_NAME bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/bdw_sim_verilog.log
+    -cmdnopsim
+    -runlock /home/m111/m111064503/EE6470/Hw3/sobel_stratus_optimal/stratus/bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/run.lnx8664.22.03.d/.xmlib.lock
+    -runscratch /home/m111/m111064503/EE6470/Hw3/sobel_stratus_optimal/stratus/bdw_work/sims/FLAT_UNROLL_ALL_FAST_V/run.lnx8664.22.03.d/ws26_24414
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 8411520 NS + 0
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	22.03-s003
+  HOSTNAME: ws26
+  OPERATING SYSTEM: Linux 3.10.0-1160.81.1.el7.x86_64 #1 SMP Fri Dec 16 17:29:43 UTC 2022 x86_64
+  MESSAGE: rts_abrthandler - SIGABRT unexpected violation pc=0x2ab3b030e387 addr=0x857f00005f5e
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65500
+External Code in function: <unavailable> offset -65513
+External Code in function: <unavailable> offset -65536
+Simulator Snap Shot: gd (SSS_GD) in snapshot worklib.top:v (SSS)
+External Code in function: <unavailable> offset -65535
+External Code in function: <unavailable> offset -65533
+Intermediate File: array of pointers (IF_PTRBLK) in snapshot worklib.top:v (SSS)
+Verilog Syntax Tree: system task enable statement (VST_S_SYSTEM_TASK_ENABLE) in module worklib.top:v (VST)
+	File: /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/hub.v, line 476, position 32
+	Scope: top.hubScheduleDelayedAssignments
+	Decompile: $sslScheduleDelayedAssignments
+	Source  : 			$sslScheduleDelayedAssignments;
+	Position: 			                             ^
+Verilog Syntax Tree: system task enable statement (VST_S_SYSTEM_TASK_ENABLE) in module worklib.top:v (VST)
+	File: /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/hub.v, line 470, position 20
+	Scope: top.hubInitQuickDrive
+	Decompile: $sslInitQuickDrive
+	Source  : 			$sslInitQuickDrive;
+	Position: 			                 ^
+Verilog Syntax Tree: system task enable statement (VST_S_SYSTEM_TASK_ENABLE) in module worklib.top:v (VST)
+	File: /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/hub.v, line 464, position 20
+	Scope: top.qbInitQuickDrive
+	Decompile: $sslInitQuickDrive
+	Source  : 			$sslInitQuickDrive;
+	Position: 			                 ^
+Code Item: ascii cb (COD_CB_ASCII)
+External Code in function: <unavailable> offset -65420
+External Code in function: <unavailable> offset -61440
+External Code in function: <unavailable> offset -54416
+csi-xmsim - CSI: investigation complete took 0.009 secs, send this file to Cadence Support

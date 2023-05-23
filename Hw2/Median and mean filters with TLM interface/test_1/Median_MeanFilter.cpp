@@ -89,8 +89,8 @@ void Median_MeanFilter::do_filter() {
         val[0][v * 3 + u] = i_r.read();
         val[1][v * 3 + u] = i_g.read();
         val[2][v * 3 + u] = i_b.read();
+        cout << "Now at " << sc_time_stamp() << " MEAN " << endl; // print current sc_time
         wait(1 * CLOCK_PERIOD, SC_NS);
-        // cout << "Now at " << sc_time_stamp() << " MEAN " << endl; // print current sc_time
       }
     }
 
