@@ -28,9 +28,7 @@ public:
   ~Median_MeanFilter() = default;
 
 private:
-  void mergeSort(vector<unsigned int>& arr, int start, int end);
-  void merge(vector<unsigned int>& arr, int start, int mid, int end);
-  unsigned int MeanFiter(vector<unsigned int>& arr);
+  
   void do_filter();
   unsigned int base_offset;
   void blocking_transport(tlm::tlm_generic_payload &payload,

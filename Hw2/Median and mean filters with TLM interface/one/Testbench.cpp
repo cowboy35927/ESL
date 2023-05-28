@@ -123,33 +123,39 @@ void Testbench::do_sobel() {
   unsigned char R, G, B; // color of R, G, B
   int adjustX, adjustY, xBound, yBound;
   //int total;
+
   word data;
   unsigned char mask[4];
   //wait(5 * CLOCK_PERIOD, SC_NS);
-  for (y = 0; y != height; ++y) 
-  {
-    for (x = 0; x != width; ++x) 
+  for (y = 0; y != height; ++y) {
+    int count=0;
+    for (x = 2; x < width; x = x + 3)
     {
-
+  
       adjustX = 1; // 1
       adjustY = 1; // 1
       xBound = 1;  // 1
       yBound = 1;  // 1
 
-      if (x==0) 
+      for (int count_y = 0; count_y < 3; count_y++)
       {
-          for (v = -yBound; v != yBound + adjustY; ++v) 
-          {   //-1, 0, 1
-            for (u = -xBound; u != xBound + adjustX; ++u) 
+        for (int count_x = -2; count_x < 3; count_x++)
+        {
+          for (v = -yBound; v != yBound + adjustY; ++v)
+          { //-1, 0, 1
+            for (u = -xBound; u != xBound + adjustX; ++u)
             { //-1, 0, 1
-              if (x + u >= 0 && x + u < width && y + v >= 0 && y + v < height) {
+              if (x + count_x + u >= 0 && x + count_x + u < width && y + count_y + v >= 0 && y + count_y + v < height)
+              {
                 R = *(source_bitmap +
-                      bytes_per_pixel * (width * (y + v) + (x + u)) + 2);
+                      bytes_per_pixel * (width * (y + count_y + v) + (x + count_x + u)) + 2);
                 G = *(source_bitmap +
-                      bytes_per_pixel * (width * (y + v) + (x + u)) + 1);
+                      bytes_per_pixel * (width * (y + count_y + v) + (x + count_x + u)) + 1);
                 B = *(source_bitmap +
-                      bytes_per_pixel * (width * (y + v) + (x + u)) + 0);
-              } else {
+                      bytes_per_pixel * (width * (y + count_y + v) + (x + count_x + u)) + 0);
+              }
+              else
+              {
                 R = 0;
                 G = 0;
                 B = 0;
@@ -157,62 +163,86 @@ void Testbench::do_sobel() {
               data.uc[0] = R;
               data.uc[1] = G;
               data.uc[2] = B;
-              data.uc[3] = 1;
               mask[0] = 0xff;
               mask[1] = 0xff;
               mask[2] = 0xff;
-              mask[3] = 0xff;
+              mask[3] = 0;
               initiator.write_to_socket(SOBEL_FILTER_R_ADDR, mask, data.uc, 4);
               wait(1 * CLOCK_PERIOD, SC_NS);
+              // cout << "Now at " << sc_time_stamp() << " TB " << endl; // print current sc_time
             }
           }
-      } else 
-      {
-          for (v = -yBound; v != yBound + adjustY; ++v) 
-          {   //-1, 0, 1
-            for (u = xBound; u != xBound + adjustX; ++u) 
-            { //1
-              if (x + u >= 0 && x + u < width && y + v >= 0 && y + v < height) {
-                R = *(source_bitmap +
-                      bytes_per_pixel * (width * (y + v) + (x + u)) + 2);
-                G = *(source_bitmap +
-                      bytes_per_pixel * (width * (y + v) + (x + u)) + 1);
-                B = *(source_bitmap +
-                      bytes_per_pixel * (width * (y + v) + (x + u)) + 0);
-              } else {
-                R = 0;
-                G = 0;
-                B = 0;
-              }
-              data.uc[0] = R;
-              data.uc[1] = G;
-              data.uc[2] = B;
-              data.uc[3] = 0;
-              mask[0] = 0xff;
-              mask[1] = 0xff;
-              mask[2] = 0xff;
-              mask[3] = 0xff;
-              initiator.write_to_socket(SOBEL_FILTER_R_ADDR, mask, data.uc, 4);
-              wait(1 * CLOCK_PERIOD, SC_NS);
+          if (count_y == 2 && count_x == 0)
+          {
+            bool done=false;
+            int output_num=0;
+            while(!done){
+              initiator.read_from_socket(SOBEL_FILTER_CHECK_ADDR, mask, data.uc, 4);
+              output_num = data.sint;
+              if(output_num>0) done=true;
             }
-          } 
+            //wait(10 * CLOCK_PERIOD, SC_NS);
+            initiator.read_from_socket(SOBEL_FILTER_RESULT_ADDR, mask, data.uc, 4);
+            //cout << "Now at " << sc_time_stamp() << " R: "<< data.uint/(256*256)<< endl; // print current sc_time
+            //cout << "Now at " << sc_time_stamp() << " G: "<<(data.uint/(256))%256<< endl; // print current sc_time
+            //cout << "Now at " << sc_time_stamp() << " B: "<< (data.uint)%(256)  << endl; // print current sc_time    
+            //total = data.sint_b;
+            //if (i_result_b.num_available() == 0)wait(i_result_b.data_written_event());
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 2) + 2) = data.uc[0];
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 2) + 1) = data.uc[1];
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 2) + 0) = data.uc[2];
+            
+            wait(1 * CLOCK_PERIOD, SC_NS);
+            count += 1;
+                         
+          }
+          else if (count_y == 2 && count_x == 1)
+          {
+            bool done=false;
+            int output_num=0;
+            while(!done){
+              initiator.read_from_socket(SOBEL_FILTER_CHECK_ADDR, mask, data.uc, 4);
+              output_num = data.sint;
+              if(output_num>0) done=true;
+            }
+            //wait(10 * CLOCK_PERIOD, SC_NS);
+            initiator.read_from_socket(SOBEL_FILTER_RESULT_ADDR, mask, data.uc, 4);
+            //cout << "Now at " << sc_time_stamp() << " R: "<< data.uint_r<< endl; // print current sc_time
+            //cout << "Now at " << sc_time_stamp() << " G: "<< data.uint_g<< endl; // print current sc_time
+            //cout << "Now at " << sc_time_stamp() << " B: "<< data.uint_b<< endl; // print current sc_time    
+            //total = data.sint;
+            //if (i_result_b.num_available() == 0) wait(i_result_b.data_written_event());
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 1) + 2) = data.uc[0];
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 1) + 1) = data.uc[1];
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 1) + 0) = data.uc[2];
+            wait(1 * CLOCK_PERIOD, SC_NS);
+            // cout << "Now at " << sc_time_stamp() << " TB45445646546554665165165 " << count << endl;
+            count += 1;
+          }
+          else if (count_y == 2 && count_x == 2)
+          {
+            bool done=false;
+            int output_num=0;
+            while(!done){
+              initiator.read_from_socket(SOBEL_FILTER_CHECK_ADDR, mask, data.uc, 4);
+              output_num = data.sint;
+              if(output_num>0) done=true;
+            }
+            //wait(10 * CLOCK_PERIOD, SC_NS);
+            initiator.read_from_socket(SOBEL_FILTER_RESULT_ADDR, mask, data.uc, 4);
+            //cout << "Now at " << sc_time_stamp() << " R: "<< data.uint_r<< endl; // print current sc_time
+            //cout << "Now at " << sc_time_stamp() << " G: "<< data.uint_g<< endl; // print current sc_time
+            //cout << "Now at " << sc_time_stamp() << " B: "<< data.uint_b<< endl; // print current sc_time    
+            //total = data.sint;
+            //if (i_result_b.num_available() == 0)wait(i_result_b.data_written_event());
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 0) + 2) = data.uc[0];
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 0) + 1) = data.uc[1];
+            *(target_bitmap + bytes_per_pixel * (width * y + x - 0) + 0) = data.uc[2];
+            count += 1;
+          }
+        }  
       }
-      bool done=false;
-      int output_num=0;
-      while(!done){
-        initiator.read_from_socket(SOBEL_FILTER_CHECK_ADDR, mask, data.uc, 4);
-        output_num = data.sint;
-        if(output_num>0) done=true;
-      }
-      // wait(10 * CLOCK_PERIOD, SC_NS);
-      initiator.read_from_socket(SOBEL_FILTER_RESULT_ADDR, mask, data.uc, 4);
-      
-      *(target_bitmap + bytes_per_pixel * (width * y + x) + 2) =  data.uint/(256*256);
-      *(target_bitmap + bytes_per_pixel * (width * y + x) + 1) = (data.uint/(256))%256;
-      *(target_bitmap + bytes_per_pixel * (width * y + x) + 0) = (data.uint)%(256);
-      wait(1 * CLOCK_PERIOD, SC_NS);
-    }  
-    
+    }
   }
   sc_stop();
 }

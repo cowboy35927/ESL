@@ -11,191 +11,240 @@ Median_MeanFilter::Median_MeanFilter(sc_module_name n)
 
   t_skt.register_b_transport(this, &Median_MeanFilter::blocking_transport);
 }
-void Median_MeanFilter::merge(vector<unsigned int> &arr, int start, int mid, int end)
-{
-  vector<unsigned int> temp(end - start + 1);
-  int i = start, j = mid + 1, k = 0;
 
-  while (i <= mid && j <= end)
-  {
-    if (arr[i] < arr[j])
-    {
-      temp[k++] = arr[i++];
-    }
-    else
-    {
-      temp[k++] = arr[j++];
-    }
-  }
-
-  while (i <= mid)
-  {
-    temp[k++] = arr[i++];
-  }
-
-  while (j <= end)
-  {
-    temp[k++] = arr[j++];
-  }
-
-  for (int i = start, k = 0; i <= end; i++, k++)
-  {
-    arr[i] = temp[k];
-  }
-}
-
-void Median_MeanFilter::mergeSort(vector<unsigned int> &arr, int start, int end)
-{
-  if (start < end)
-  {
-    int mid = start + (end - start) / 2;
-    mergeSort(arr, start, mid);
-    mergeSort(arr, mid + 1, end);
-    merge(arr, start, mid, end);
-  }
-}
-unsigned int Median_MeanFilter::MeanFiter(vector<unsigned int> &arr)
-{
-  unsigned int mean = 0;
-  for (int i = 0; i < MASK_Y * MASK_X; i++)
-  {
-    if (i == 4)
-    {
-      mean = mean + (2 * arr[i]) / 10;
-    }
-    else
-    {
-      mean = mean + arr[i] / 10;
-    }
-  }
-  return mean;
-};
 // sobel mask
-const int mask[MASK_N][MASK_X][MASK_Y] = {{{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}},
-
-                                          {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}}};
+float expon[MASK_X][MASK_Y]={{0.20961138715109787,0.4578333617716143,0.20961138715109787},{0.4578333617716143,1.0,0.4578333617716143},{0.20961138715109787,0.4578333617716143,0.20961138715109787}};
 
 void Median_MeanFilter::do_filter() {  
-  //int i = 0;
-  vector<vector<unsigned int>> buffer(3, vector<unsigned int>(9, 0));
+  sc_dt::sc_uint<12> mean_r;
+  sc_dt::sc_uint<12> mean_g;
+  sc_dt::sc_uint<12> mean_b;
+  sc_dt::sc_uint<32> total ;
+  sc_dt::sc_uint<8> o_r;
+  sc_dt::sc_uint<8> o_g;
+  sc_dt::sc_uint<8> o_b;
+  const int sharpening[MASK_X][MASK_Y] = {{0,-1,0},{-1,5,-1},{0,-1,0}};
+  float  sigma;
+  float  constant;
+  int radium;
+  float Gaussian[9];
+  sigma=0.3*((3-1)*0.5 - 1) + 0.8;
+  constant=1/(2*3.141592*sigma*sigma);
+  radium=1;
+  int i=0;
+  float total_sum=0;
+  for (int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+          int x,y;
+          float  gaussian;
+          x=i-radium;
+          y=j-radium;
+          gaussian = constant*expon[i][j];//*exp(-0.5/(sigma*sigma)*(x*x+y*y));
+          cout<<gaussian<<endl;
+          total_sum+=gaussian ; 
+          Gaussian[i*3+j]= gaussian ;    
+    }
+  }
+
+  for (int i=0;i<9;i++){
+    Gaussian[i]=  Gaussian[i]/total_sum ;   
+    cout<< "gaussian:"<<i<<","<< Gaussian[i]<<endl;
+  }    
+  vector<vector<float>> buffer(3, vector<float>(15, 0));
+
   
   while (true) {
-    unsigned int mid_r = 0, mid_g = 0, mid_b = 0;
-    unsigned int mean_r = 0, mean_g = 0, mean_b = 0;
-    
-    int counter = 0;
+    //unsigned int mid_r = 0, mid_g = 0, mid_b = 0;
+    unsigned int total=0;
     vector<vector<unsigned int>> val(3, vector<unsigned int>(9, 0));
-    unsigned char check;
-    check = i_last.read();
-    if (check == 1){
-      for (int i = 0; i < 8; i ++)
-      {
-        check = i_last.read();
-      }
-    } else {
-      for (int i = 0; i < 2; i ++)
-      {
-        check = i_last.read();
-      }
-    }
-    if (check == 1) {
-     
-
-      for (unsigned int v = 0; v < MASK_Y; ++v) {
-        for (unsigned int u = 0; u < MASK_X; ++u) {
-           val[0][v * 3 + u] = i_r.read();
-           val[1][v * 3 + u] = i_g.read();
-           val[2][v * 3 + u] = i_b.read();
-           //wait(1 * CLOCK_PERIOD, SC_NS);
-        }
-      }
-      counter = 0;
-    } else {
-
-      val[0][0 + (counter % 3)] = i_r.read();
-      val[0][3 + (counter % 3)] = i_r.read();
-      val[0][6 + (counter % 3)] = i_r.read();
-      val[1][0 + (counter % 3)] = i_g.read();
-      val[1][3 + (counter % 3)] = i_g.read();
-      val[1][6 + (counter % 3)] = i_g.read();
-      val[2][0 + (counter % 3)] = i_b.read();
-      val[2][3 + (counter % 3)] = i_b.read();
-      val[2][6 + (counter % 3)] = i_b.read();
-
-      //wait(1 * CLOCK_PERIOD, SC_NS);
-      counter = counter + 1;
-    }
-    int center_r, center_g, center_b;
-    if (counter == 0) {
-      center_r = val[0][val[0].size() / 2];
-      center_g = val[1][val[1].size() / 2];
-      center_b = val[2][val[2].size() / 2];
-    } else {
-      if ((counter % 3) == 1) {
-        center_r = val[0][5];
-        center_g = val[1][5];
-        center_b = val[2][5];
-      }
-      else if ((counter % 3) == 2) {
-        center_r = val[0][3];
-        center_g = val[1][3];
-        center_b = val[2][3];
-      }
-      else if ((counter % 3) == 0) {
-        center_r = val[0][4];
-        center_g = val[1][4];
-        center_b = val[2][4];
-      }
-    }
-
-    mergeSort(val[0], 0, val[0].size() - 1);
-    mergeSort(val[1], 0, val[1].size() - 1);
-    mergeSort(val[2], 0, val[2].size() - 1);
-    
-
-    unsigned char arr_r1 [9];
-    unsigned char arr_g1 [9];
-    unsigned char arr_b1 [9];
-    for(int i=0;i<3;i++){
-      for(int j=0;j<9;j++){
-        if(i==0){
-          arr_r1[j]=val[i][j];
-        }else if(i==1){
-          arr_g1[j]=val[i][j];
-        }else{
-          arr_b1[j]=val[i][j];
-        }
-      }
-    }
-    
-    //mid_r = 0, mid_g = 0, mid_b = 0;
-    for (int i = 0; i < MASK_Y * MASK_X; i++)
+    for (unsigned int v = 0; v < MASK_Y; ++v)
     {
-      if (i == 4)
+      for (unsigned int u = 0; u < MASK_X; ++u)
       {
-        mean_r = mean_r + (arr_r1[i]<<1) / 10;
-        mean_g = mean_g + (arr_g1[i]<<1) / 10;
-        mean_b = mean_b + (arr_b1[i]<<1) / 10;
-      }
-      else
-      {
-        mean_r = mean_r + arr_r1[i] / 10;
-        mean_g = mean_g + arr_g1[i] / 10;
-        mean_b = mean_b + arr_b1[i] / 10;
+        val[0][v * 3 + u] = i_r.read();
+        val[1][v * 3 + u] = i_g.read();
+        val[2][v * 3 + u] = i_b.read();
+        //cout << "Now at " << sc_time_stamp() << " MEAN " << endl; // print current sc_time
+        //wait(1 * CLOCK_PERIOD, SC_NS);
       }
     }
-    mid_r = mean_r;
-    mid_g = mean_g;
-    mid_b = mean_b;      
-    //mid_r = MeanFiter(arr_r1);
-    //mid_g = MeanFiter(arr_g1);
-    //mid_b = MeanFiter(arr_b1);
 
-    int total = 0;
-    total = (mid_r<<16) + (mid_g<<8) + mid_b ;
+    float sum_r=0;
+    float sum_g=0;
+    float sum_b=0;
+    for (int x=0;x<9;x++){
+        sum_r+=  Gaussian[x]*val[0][x] ;   
+        sum_g+=  Gaussian[x]*val[1][x] ;   
+        sum_b+=  Gaussian[x]*val[2][x] ;  
+    }    
+    if (i < 5)
+    {
+      buffer[0][i * 3] = sum_r;
+      buffer[1][i * 3] = sum_g;
+      buffer[2][i * 3] = sum_b;
+    }
+    else if (i >= 5 && i < 10)
+    {
+      buffer[0][(i - 5) * 3 + 1] = sum_r;
+      buffer[1][(i - 5) * 3 + 1] = sum_g;
+      buffer[2][(i - 5) * 3 + 1] = sum_b;
+    }
+    else
+    {
+      buffer[0][(i - 10) * 3 + 2] = sum_r;
+      buffer[1][(i - 10) * 3 + 2] = sum_g;
+      buffer[2][(i - 10) * 3 + 2] = sum_b;
+    }
 
-    o_result.write(total);
-    wait(1 * CLOCK_PERIOD, SC_NS);
+    i = i + 1;
+    if (i == 13)
+    {
+      // cout << "Now at " << sc_time_stamp() <<" 5164165165,i= "<< i<< endl; //print current sc_time
+      int sum_r=0;
+      int sum_g=0;
+      int sum_b=0;
+      for(int u=0;u< 3;u++){
+         for(int j=0;j<3;j++){
+             sum_r+=buffer[0][u * 3 + j]*sharpening[u][j];
+             sum_g+=buffer[1][u * 3 + j]*sharpening[u][j];
+             sum_b+=buffer[2][u * 3 + j]*sharpening[u][j];
+         }    
+      }
+      if(sum_r>255){
+         sum_r=255;
+      }else if(sum_r<0){
+         sum_r=0;
+      }else{
+         sum_r=sum_r;
+      }
+      if(sum_g>255){
+         sum_g=255;
+      }else if(sum_g<0){
+         sum_g=0;
+      }else{
+         sum_g=sum_g;
+      }
+      
+      if(sum_b>255){
+         sum_b=255;
+      }else if(sum_b<0){
+         sum_b=0;
+      }else{
+         sum_b=sum_b;
+      }
+     
+      o_r=sum_r;
+      o_g=sum_g;
+      o_b=sum_b;
+
+      //int total = 0;
+      //total = (mid_r<<16) + (mid_g<<8) + mid_b ;
+      total=(0, o_b, o_g, o_r);
+      o_result.write(total);
+      total=0;
+      mean_r = 0, mean_g = 0, mean_b = 0;
+   
+    }
+    else if (i == 14)
+    {
+        int sum_r=0;
+      int sum_g=0;
+      int sum_b=0;
+      for(int u=0;u< 3;u++){
+         for(int j=0;j<3;j++){
+             sum_r+=buffer[0][u * 3 + j + 3]*sharpening[u][j];
+             sum_g+=buffer[1][u * 3 + j + 3]*sharpening[u][j];
+             sum_b+=buffer[2][u * 3 + j + 3]*sharpening[u][j];
+         }    
+      }
+      if(sum_r>255){
+         sum_r=255;
+      }else if(sum_r<0){
+         sum_r=0;
+      }else{
+         sum_r=sum_r;
+      }
+      if(sum_g>255){
+         sum_g=255;
+      }else if(sum_g<0){
+         sum_g=0;
+      }else{
+         sum_g=sum_g;
+      }
+      
+      if(sum_b>255){
+         sum_b=255;
+      }else if(sum_b<0){
+         sum_b=0;
+      }else{
+         sum_b=sum_b;
+      }
+     
+      o_r=sum_r;
+      o_g=sum_g;
+      o_b=sum_b;
+
+      //int total = 0;
+      //total = (mid_r<<16) + (mid_g<<8) + mid_b ;
+      total=(0, o_b, o_g, o_r);
+      o_result.write(total);
+      total=0;
+      mean_r = 0, mean_g = 0, mean_b = 0;
+      //wait(1 * CLOCK_PERIOD, SC_NS);
+      // cout << "Now at CPP854541231sdfsdfsd2 " << sc_time_stamp() << " i " << i << endl;
+    }
+    else if (i == 15)
+    {
+       int sum_r=0;
+      int sum_g=0;
+      int sum_b=0;
+      for(int u=0;u< 3;u++){
+         for(int j=0;j<3;j++){
+            sum_r+=buffer[0][u * 3 + j + 6]*sharpening[u][j];
+            sum_g+=buffer[1][u * 3 + j + 6]*sharpening[u][j];
+            sum_b+=buffer[2][u * 3 + j + 6]*sharpening[u][j];
+         }    
+      }    
+    
+      if(sum_r>255){
+         sum_r=255;
+      }else if(sum_r<0){
+         sum_r=0;
+      }else{
+         sum_r=sum_r;
+      }
+      if(sum_g>255){
+         sum_g=255;
+      }else if(sum_g<0){
+         sum_g=0;
+      }else{
+         sum_g=sum_g;
+      }
+      
+      if(sum_b>255){
+         sum_b=255;
+      }else if(sum_b<0){
+         sum_b=0;
+      }else{
+         sum_b=sum_b;
+      }
+     
+      o_r=sum_r;
+      o_g=sum_g;
+      o_b=sum_b;
+     
+      //int total = 0;
+      //total = (mid_r<<16) + (mid_g<<8) + mid_b ;
+      total=(0, o_b, o_g, o_r);
+      o_result.write(total);
+      //wait(1* CLOCK_PERIOD, SC_NS);
+      total=0;
+      mean_r = 0, mean_g = 0, mean_b = 0;
+      i = 0;
+      vector<vector<unsigned int>> buffer(3, vector<unsigned int>(15, 0));
+
+      // cout << "Now at CPP85454123132asdasdassasad " << sc_time_stamp() << " i " << i << endl;
+    }
   }
 }
 

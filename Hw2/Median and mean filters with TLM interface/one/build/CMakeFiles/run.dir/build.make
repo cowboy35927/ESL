@@ -70,7 +70,7 @@ CMakeFiles/run: out.bmp
 
 out.bmp: sobel
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/user/ee6470/docker-images/EE6470/ESL/Hw2/Median and mean filters with TLM interface/one/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating out.bmp"
-	./sobel /home/user/ee6470/docker-images/EE6470/ESL/Hw2/Median\ and\ mean\ filters\ with\ TLM\ interface/one/lena_color_256_noise.bmp ./out.bmp
+	./sobel /home/user/ee6470/docker-images/EE6470/ESL/Hw2/Median\ and\ mean\ filters\ with\ TLM\ interface/one/lena_std_short.bmp ./out.bmp
 
 run: CMakeFiles/run
 run: out.bmp
