@@ -1,0 +1,28 @@
+`timescale 1ps / 1ps
+/*****************************************************************************
+    Verilog RTL Description
+    
+    Configured at: 12:39:16 CST (+0800), Friday 26 May 2023
+    Configured on: ws26
+    Configured by: m111064503 (m111064503)
+    
+    Created by: Stratus DpOpt 21.05.01 
+*******************************************************************************/
+
+module SobelFilter_Lti3u2_1 (
+	in1,
+	out1
+	); /* architecture "behavioural" */ 
+input [1:0] in1;
+output  out1;
+wire  asc001;
+
+assign asc001 = (7'B0000011>in1);
+
+assign out1 = asc001;
+endmodule
+
+/* CADENCE  urb1Tg8= : u9/ySxbfrwZIxEzHVQQV8Q== ** DO NOT EDIT THIS LINE ******/
+
+
+

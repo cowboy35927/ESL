@@ -1,0 +1,12 @@
+16358		// ppid
+16361		// pid
+ws26	// host name
+bdw_work/trace/hlsv.SobelFilter.PIPELINE.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685363476	// start time: Mon May 29 20:31:16 2023
+1685363477	// end time:   Mon May 29 20:31:17 2023
+make --no-print-directory -f Makefile CWBExec_hlsv=1 hlsv_SobelFilter_PIPELINE
+

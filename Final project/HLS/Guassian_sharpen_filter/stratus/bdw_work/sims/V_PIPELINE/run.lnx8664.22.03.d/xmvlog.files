@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/stratus/bdw_work/sims/top_V_PIPELINE.v
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/stratus/bdw_work/wrappers/SobelFilter_cosim.v
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/stratus/bdw_work/modules/SobelFilter/PIPELINE/SobelFilter_rtl.v
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/stratus/bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_DivRem_4.v
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/stratus/bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_ROM_9X32_sharpening.v
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/stratus/bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_RAM_45X32_3.v
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/stratus/bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_RAM_9X24_1.v

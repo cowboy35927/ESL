@@ -1,0 +1,12 @@
+16045		// ppid
+16048		// pid
+ws26	// host name
+bdw_work/trace/build.V_UNROLL_ALL.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685051864	// start time: Fri May 26 05:57:44 2023
+1685052636	// end time:   Fri May 26 06:10:36 2023
+make --no-print-directory -f Makefile CWBExec_build=1 build_V_UNROLL_ALL_sub
+

@@ -1,0 +1,12 @@
+15783		// ppid
+15786		// pid
+ws26	// host name
+bdw_work/trace/build.V_PIPELINE.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685363474	// start time: Mon May 29 20:31:14 2023
+1685363479	// end time:   Mon May 29 20:31:19 2023
+make --no-print-directory -f Makefile CWBExec_build=1 build_V_PIPELINE_sub
+

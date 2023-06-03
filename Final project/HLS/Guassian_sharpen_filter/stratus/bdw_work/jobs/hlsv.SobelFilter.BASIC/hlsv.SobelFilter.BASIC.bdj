@@ -1,0 +1,12 @@
+11547		// ppid
+11550		// pid
+ws26	// host name
+bdw_work/trace/hlsv.SobelFilter.BASIC.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685055918	// start time: Fri May 26 07:05:18 2023
+1685055919	// end time:   Fri May 26 07:05:19 2023
+make --no-print-directory -f Makefile CWBExec_hlsv=1 hlsv_SobelFilter_BASIC
+

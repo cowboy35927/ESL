@@ -1,0 +1,7329 @@
+<?xml version="1.0"?>
+<tool_log>
+	<message>
+		<code_num>408</code_num>
+		<severity>WARNING</severity>
+		<message_text>val.value may be read before it is written.</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_fixed.h</source_path>
+		<source_line>4532</source_line>
+		<phase>pm</phase>
+		<order>9</order>
+	</message>
+	<message>
+		<code_num>1037</code_num>
+		<severity>NOTE</severity>
+		<message_text>Characterizing multiplexors up to 49 bits by 64 inputs.</message_text>
+		<phase>pm</phase>
+		<order>46</order>
+	</message>
+	<message>
+		<code_num>852</code_num>
+		<severity>NOTE</severity>
+		<message_text>Created memory wrapper SobelFilter_RAM_9X24_1</message_text>
+		<source_path>../SobelFilter.cpp</source_path>
+		<source_line>49</source_line>
+		<phase>pm</phase>
+		<order>47</order>
+	</message>
+	<message>
+		<code_num>852</code_num>
+		<severity>NOTE</severity>
+		<message_text>Created memory wrapper ROM_9X32</message_text>
+		<source_path>../SobelFilter.cpp</source_path>
+		<source_line>242</source_line>
+		<phase>pm</phase>
+		<order>48</order>
+	</message>
+	<message>
+		<code_num>852</code_num>
+		<severity>NOTE</severity>
+		<message_text>Created memory wrapper SobelFilter_RAM_45X32_3</message_text>
+		<source_path>../SobelFilter.cpp</source_path>
+		<source_line>242</source_line>
+		<phase>pm</phase>
+		<order>49</order>
+	</message>
+	<resource>
+		<res_id>203</res_id>
+		<opcode>206</opcode>
+		<opcode>207</opcode>
+		<latency>1</latency>
+		<setup_time>0.0655</setup_time>
+		<delay>0.1140</delay>
+		<module_name>SobelFilter_RAM_9X24_1</module_name>
+		<resource_kind>RAM</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>103</res_id>
+		<opcode>105</opcode>
+		<latency>0</latency>
+		<delay>0.1443</delay>
+		<module_name>SobelFilter_Mul_2Ux2U_4U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>*</label>
+		<unit_area>24.5214</unit_area>
+		<comb_area>24.5214</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.2859</leakage_power>
+		<net_power>2719.1700</net_power>
+		<internal_power>3067.7700</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>108</res_id>
+		<opcode>110</opcode>
+		<latency>0</latency>
+		<delay>0.1922</delay>
+		<module_name>SobelFilter_Add_4Ux2U_5S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>31.5837</unit_area>
+		<comb_area>31.5837</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.3564</leakage_power>
+		<net_power>3302.3600</net_power>
+		<internal_power>4024.2600</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>155</res_id>
+		<opcode>157</opcode>
+		<latency>0</latency>
+		<delay>1.0605</delay>
+		<module_name>SobelFilter_Mul_25Sx10U_35S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>*</label>
+		<unit_area>2281.7898</unit_area>
+		<comb_area>2281.7898</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>88.3636</leakage_power>
+		<net_power>280839.0000</net_power>
+		<internal_power>545297.0000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>106</res_id>
+		<opcode>108</opcode>
+		<latency>0</latency>
+		<delay>0.3574</delay>
+		<module_name>SobelFilter_Add_24Ux14U_24U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>289.1097</unit_area>
+		<comb_area>289.1097</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>12.5794</leakage_power>
+		<net_power>28022.9000</net_power>
+		<internal_power>43948.6000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>204</res_id>
+		<opcode>208</opcode>
+		<opcode>209</opcode>
+		<latency>1</latency>
+		<setup_time>0.0655</setup_time>
+		<delay>0.1140</delay>
+		<module_name>SobelFilter_RAM_9X24_1</module_name>
+		<resource_kind>RAM</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>110</res_id>
+		<opcode>112</opcode>
+		<latency>0</latency>
+		<delay>0.0976</delay>
+		<module_name>SobelFilter_Add_2Ux1U_3U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>12.7737</unit_area>
+		<comb_area>12.7737</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.6349</leakage_power>
+		<net_power>1539.6500</net_power>
+		<internal_power>1644.6400</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>111</res_id>
+		<opcode>113</opcode>
+		<latency>0</latency>
+		<delay>0.2099</delay>
+		<module_name>SobelFilter_LessThan_3Sx3S_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&lt;</label>
+		<unit_area>22.5720</unit_area>
+		<comb_area>22.5720</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.0401</leakage_power>
+		<net_power>2180.2300</net_power>
+		<internal_power>3567.3500</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>11</res_id>
+		<opcode>12</opcode>
+		<latency>2</latency>
+		<setup_time>9.6221</setup_time>
+		<delay>9.6710</delay>
+		<module_name>SobelFilter_DivRem_4</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_DPOPT</module_origin>
+		<unit_area>13863.3462</unit_area>
+		<comb_area>12290.1462</comb_area>
+		<seq_area>1573.2000</seq_area>
+		<leakage_power>519.9010</leakage_power>
+		<net_power>204747.0000</net_power>
+		<internal_power>607100.0000</internal_power>
+		<reg_bits>203</reg_bits>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>112</res_id>
+		<opcode>114</opcode>
+		<latency>0</latency>
+		<delay>0.1679</delay>
+		<module_name>SobelFilter_Add_4Ux1U_5U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>29.1897</unit_area>
+		<comb_area>29.1897</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.2265</leakage_power>
+		<net_power>2484.4300</net_power>
+		<internal_power>3071.3300</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>115</res_id>
+		<opcode>117</opcode>
+		<latency>0</latency>
+		<delay>0.2490</delay>
+		<module_name>SobelFilter_LessThan_5Sx5S_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&lt;</label>
+		<unit_area>29.7540</unit_area>
+		<comb_area>29.7540</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.3940</leakage_power>
+		<net_power>2602.3400</net_power>
+		<internal_power>4752.7100</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>116</res_id>
+		<opcode>118</opcode>
+		<latency>0</latency>
+		<delay>0.0600</delay>
+		<module_name>SobelFilter_N_Mux_24_2_0_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>281.9448</unit_area>
+		<comb_area>281.9448</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>19.6463</leakage_power>
+		<net_power>40730.7000</net_power>
+		<internal_power>47618.3000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>113</res_id>
+		<opcode>115</opcode>
+		<latency>0</latency>
+		<delay>0.1922</delay>
+		<module_name>SobelFilter_Add_4Ux2U_5U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>31.5837</unit_area>
+		<comb_area>31.5837</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.3564</leakage_power>
+		<net_power>3302.3600</net_power>
+		<internal_power>4024.2600</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>117</res_id>
+		<opcode>119</opcode>
+		<latency>0</latency>
+		<delay>0.2674</delay>
+		<module_name>SobelFilter_N_Mux_20_4_1_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>211.8006</unit_area>
+		<comb_area>211.8006</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>10.6013</leakage_power>
+		<net_power>16105.8000</net_power>
+		<internal_power>21319.3000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>118</res_id>
+		<opcode>120</opcode>
+		<latency>0</latency>
+		<delay>0.2358</delay>
+		<module_name>SobelFilter_N_Mux_20_4_2_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>211.6638</unit_area>
+		<comb_area>211.6638</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>10.1309</leakage_power>
+		<net_power>15176.6000</net_power>
+		<internal_power>15597.8000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>119</res_id>
+		<opcode>121</opcode>
+		<latency>0</latency>
+		<delay>0.2501</delay>
+		<module_name>SobelFilter_N_Mux_20_4_3_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>193.4865</unit_area>
+		<comb_area>193.4865</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>8.6851</leakage_power>
+		<net_power>14723.2000</net_power>
+		<internal_power>13994.7000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>120</res_id>
+		<opcode>122</opcode>
+		<latency>0</latency>
+		<delay>0.2581</delay>
+		<module_name>SobelFilter_N_Mux_20_4_4_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>177.0192</unit_area>
+		<comb_area>177.0192</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>8.4330</leakage_power>
+		<net_power>15479.3000</net_power>
+		<internal_power>15078.9000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>121</res_id>
+		<opcode>123</opcode>
+		<latency>0</latency>
+		<delay>0.2467</delay>
+		<module_name>SobelFilter_N_Mux_20_4_5_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>213.0489</unit_area>
+		<comb_area>213.0489</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>9.8673</leakage_power>
+		<net_power>15923.9000</net_power>
+		<internal_power>15157.8000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>122</res_id>
+		<opcode>124</opcode>
+		<latency>0</latency>
+		<delay>0.2467</delay>
+		<module_name>SobelFilter_N_Mux_20_4_6_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>223.0353</unit_area>
+		<comb_area>223.0353</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>9.9844</leakage_power>
+		<net_power>16383.2000</net_power>
+		<internal_power>15655.9000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>123</res_id>
+		<opcode>125</opcode>
+		<latency>0</latency>
+		<delay>0.2637</delay>
+		<module_name>SobelFilter_N_Mux_20_4_7_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>181.1232</unit_area>
+		<comb_area>181.1232</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.8429</leakage_power>
+		<net_power>13890.1000</net_power>
+		<internal_power>14203.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>124</res_id>
+		<opcode>126</opcode>
+		<latency>0</latency>
+		<delay>0.2464</delay>
+		<module_name>SobelFilter_N_Mux_20_4_8_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(4)</label>
+		<unit_area>192.4605</unit_area>
+		<comb_area>192.4605</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>9.0519</leakage_power>
+		<net_power>15707.4000</net_power>
+		<internal_power>14522.6000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>125</res_id>
+		<opcode>127</opcode>
+		<latency>0</latency>
+		<delay>0.0896</delay>
+		<module_name>SobelFilter_OrReduction_5U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>or_reduce</label>
+		<unit_area>9.9180</unit_area>
+		<comb_area>9.9180</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.4305</leakage_power>
+		<net_power>1172.2300</net_power>
+		<internal_power>974.2530</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>126</res_id>
+		<opcode>128</opcode>
+		<latency>0</latency>
+		<delay>0.2263</delay>
+		<module_name>SobelFilter_N_Mux_20_3_9_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>150.4458</unit_area>
+		<comb_area>150.4458</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.3298</leakage_power>
+		<net_power>11985.7000</net_power>
+		<internal_power>15990.2000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>127</res_id>
+		<opcode>129</opcode>
+		<latency>0</latency>
+		<delay>0.0600</delay>
+		<module_name>SobelFilter_N_Mux_20_2_10_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>234.9540</unit_area>
+		<comb_area>234.9540</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>16.3719</leakage_power>
+		<net_power>33942.2000</net_power>
+		<internal_power>39681.9000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>128</res_id>
+		<opcode>130</opcode>
+		<latency>0</latency>
+		<delay>0.2272</delay>
+		<module_name>SobelFilter_N_Mux_20_3_11_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>149.0778</unit_area>
+		<comb_area>149.0778</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.2286</leakage_power>
+		<net_power>11787.4000</net_power>
+		<internal_power>15772.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>129</res_id>
+		<opcode>131</opcode>
+		<latency>0</latency>
+		<delay>0.2254</delay>
+		<module_name>SobelFilter_N_Mux_20_3_12_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>131.7897</unit_area>
+		<comb_area>131.7897</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>6.3609</leakage_power>
+		<net_power>8670.2300</net_power>
+		<internal_power>14730.0000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>130</res_id>
+		<opcode>132</opcode>
+		<latency>0</latency>
+		<delay>0.2233</delay>
+		<module_name>SobelFilter_N_Mux_20_3_13_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>181.0377</unit_area>
+		<comb_area>181.0377</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.0569</leakage_power>
+		<net_power>13582.7000</net_power>
+		<internal_power>15600.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>131</res_id>
+		<opcode>133</opcode>
+		<latency>0</latency>
+		<delay>0.2189</delay>
+		<module_name>SobelFilter_N_Mux_20_3_14_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>176.1129</unit_area>
+		<comb_area>176.1129</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.4342</leakage_power>
+		<net_power>15561.8000</net_power>
+		<internal_power>18229.3000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>132</res_id>
+		<opcode>134</opcode>
+		<latency>0</latency>
+		<delay>0.2145</delay>
+		<module_name>SobelFilter_N_Mux_20_3_15_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>175.5144</unit_area>
+		<comb_area>175.5144</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.8158</leakage_power>
+		<net_power>16443.4000</net_power>
+		<internal_power>16892.9000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>133</res_id>
+		<opcode>135</opcode>
+		<latency>0</latency>
+		<delay>0.2316</delay>
+		<module_name>SobelFilter_N_Mux_20_3_16_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>150.5142</unit_area>
+		<comb_area>150.5142</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.3930</leakage_power>
+		<net_power>11663.5000</net_power>
+		<internal_power>14227.2000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>134</res_id>
+		<opcode>136</opcode>
+		<latency>0</latency>
+		<delay>0.2145</delay>
+		<module_name>SobelFilter_N_Mux_20_3_17_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>175.5144</unit_area>
+		<comb_area>175.5144</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.8158</leakage_power>
+		<net_power>16455.0000</net_power>
+		<internal_power>16892.9000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>135</res_id>
+		<opcode>137</opcode>
+		<latency>0</latency>
+		<delay>0.2189</delay>
+		<module_name>SobelFilter_N_Mux_20_3_18_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(3)</label>
+		<unit_area>182.5767</unit_area>
+		<comb_area>182.5767</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>8.4640</leakage_power>
+		<net_power>16901.3000</net_power>
+		<internal_power>20265.6000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>136</res_id>
+		<opcode>138</opcode>
+		<latency>0</latency>
+		<delay>0.1632</delay>
+		<module_name>SobelFilter_Equal_5Ux4U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>==</label>
+		<unit_area>45.8280</unit_area>
+		<comb_area>45.8280</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>3.3853</leakage_power>
+		<net_power>5448.0800</net_power>
+		<internal_power>6703.5500</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>137</res_id>
+		<opcode>139</opcode>
+		<latency>0</latency>
+		<delay>0.1581</delay>
+		<module_name>SobelFilter_Equal_5Ux3U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>==</label>
+		<unit_area>23.2560</unit_area>
+		<comb_area>23.2560</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.2274</leakage_power>
+		<net_power>2447.7500</net_power>
+		<internal_power>2751.8300</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>138</res_id>
+		<opcode>140</opcode>
+		<latency>0</latency>
+		<delay>0.1367</delay>
+		<module_name>SobelFilter_Equal_5Ux2U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>==</label>
+		<unit_area>16.7580</unit_area>
+		<comb_area>16.7580</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.8109</leakage_power>
+		<net_power>1559.2400</net_power>
+		<internal_power>1879.0600</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>139</res_id>
+		<opcode>141</opcode>
+		<latency>0</latency>
+		<delay>0.1087</delay>
+		<module_name>SobelFilter_Equal_5Ux1U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>==</label>
+		<unit_area>12.9960</unit_area>
+		<comb_area>12.9960</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.7229</leakage_power>
+		<net_power>1439.0500</net_power>
+		<internal_power>1612.6600</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>140</res_id>
+		<opcode>142</opcode>
+		<latency>0</latency>
+		<delay>0.0963</delay>
+		<module_name>SobelFilter_Add_2Ux1U_2U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>11.7477</unit_area>
+		<comb_area>11.7477</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.5954</leakage_power>
+		<net_power>1376.3500</net_power>
+		<internal_power>1563.8400</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>141</res_id>
+		<opcode>143</opcode>
+		<latency>0</latency>
+		<delay>0.1075</delay>
+		<module_name>SobelFilter_LessThan_2Ux2U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&lt;</label>
+		<unit_area>5.8140</unit_area>
+		<comb_area>5.8140</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.2369</leakage_power>
+		<net_power>559.8720</net_power>
+		<internal_power>759.6870</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>142</res_id>
+		<opcode>144</opcode>
+		<latency>0</latency>
+		<delay>0.2866</delay>
+		<module_name>SobelFilter_N_Mux_20_16_19_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(16)</label>
+		<unit_area>680.2038</unit_area>
+		<comb_area>680.2038</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>22.5224</leakage_power>
+		<net_power>36088.8000</net_power>
+		<internal_power>40239.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>156</res_id>
+		<opcode>158</opcode>
+		<latency>0</latency>
+		<delay>1.2610</delay>
+		<module_name>SobelFilter_Mul_25Sx20U_34S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>*</label>
+		<unit_area>3722.2425</unit_area>
+		<comb_area>3722.2425</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>148.3350</leakage_power>
+		<net_power>469076.0000</net_power>
+		<internal_power>910494.0000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>145</res_id>
+		<opcode>147</opcode>
+		<latency>0</latency>
+		<delay>0.3883</delay>
+		<module_name>SobelFilter_Add_33Ux33U_33U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>579.0402</unit_area>
+		<comb_area>579.0402</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>25.8140</leakage_power>
+		<net_power>59116.5000</net_power>
+		<internal_power>100521.0000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>146</res_id>
+		<opcode>148</opcode>
+		<latency>0</latency>
+		<delay>0.2745</delay>
+		<module_name>SobelFilter_N_Mux_20_11_20_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(11)</label>
+		<unit_area>471.1392</unit_area>
+		<comb_area>471.1392</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>19.1995</leakage_power>
+		<net_power>30763.3000</net_power>
+		<internal_power>44502.2000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>147</res_id>
+		<opcode>149</opcode>
+		<latency>0</latency>
+		<delay>0.3485</delay>
+		<module_name>SobelFilter_LessThan_32Sx4S_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&lt;</label>
+		<unit_area>197.6760</unit_area>
+		<comb_area>197.6760</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>9.3604</leakage_power>
+		<net_power>16149.3000</net_power>
+		<internal_power>31916.3000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>149</res_id>
+		<opcode>151</opcode>
+		<latency>0</latency>
+		<delay>0.3593</delay>
+		<module_name>SobelFilter_GreaterThanEQ_32Sx4S_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&gt;=</label>
+		<unit_area>161.4240</unit_area>
+		<comb_area>161.4240</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>6.4837</leakage_power>
+		<net_power>12510.1000</net_power>
+		<internal_power>26129.9000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>148</res_id>
+		<opcode>150</opcode>
+		<latency>0</latency>
+		<delay>0.3589</delay>
+		<module_name>SobelFilter_LessThan_32Sx5S_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&lt;</label>
+		<unit_area>176.1300</unit_area>
+		<comb_area>176.1300</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.2845</leakage_power>
+		<net_power>13073.0000</net_power>
+		<internal_power>28674.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>150</res_id>
+		<opcode>152</opcode>
+		<latency>0</latency>
+		<delay>0.0456</delay>
+		<module_name>SobelFilter_And_1Ux1U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&amp;</label>
+		<unit_area>8.8920</unit_area>
+		<comb_area>8.8920</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.8049</leakage_power>
+		<net_power>1271.3800</net_power>
+		<internal_power>1427.3400</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>151</res_id>
+		<opcode>153</opcode>
+		<latency>0</latency>
+		<delay>0.0515</delay>
+		<module_name>SobelFilter_Or_1Ux1U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>|</label>
+		<unit_area>4.4460</unit_area>
+		<comb_area>4.4460</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.3061</leakage_power>
+		<net_power>571.5360</net_power>
+		<internal_power>605.0320</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>152</res_id>
+		<opcode>154</opcode>
+		<latency>0</latency>
+		<delay>0.0194</delay>
+		<module_name>SobelFilter_Not_1U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>!</label>
+		<unit_area>4.1040</unit_area>
+		<comb_area>4.1040</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.4671</leakage_power>
+		<net_power>676.5120</net_power>
+		<internal_power>728.4930</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>153</res_id>
+		<opcode>155</opcode>
+		<latency>0</latency>
+		<delay>0.2257</delay>
+		<module_name>SobelFilter_Sub_6Sx4U_6S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>-</label>
+		<unit_area>77.9931</unit_area>
+		<comb_area>77.9931</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>5.0161</leakage_power>
+		<net_power>9127.2700</net_power>
+		<internal_power>12216.0000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>154</res_id>
+		<opcode>156</opcode>
+		<latency>0</latency>
+		<delay>0.2935</delay>
+		<module_name>SobelFilter_Mul_6Sx2U_6S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>*</label>
+		<unit_area>78.2667</unit_area>
+		<comb_area>78.2667</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>3.7153</leakage_power>
+		<net_power>7068.1500</net_power>
+		<internal_power>9069.3200</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>158</res_id>
+		<opcode>160</opcode>
+		<latency>0</latency>
+		<delay>0.1939</delay>
+		<module_name>SobelFilter_Add_6Sx2U_6S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>48.0681</unit_area>
+		<comb_area>48.0681</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>2.2682</leakage_power>
+		<net_power>5137.5300</net_power>
+		<internal_power>6370.1800</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>201</res_id>
+		<opcode>203</opcode>
+		<opcode>204</opcode>
+		<latency>1</latency>
+		<setup_time>0.0655</setup_time>
+		<delay>0.1140</delay>
+		<module_name>SobelFilter_RAM_45X32_3</module_name>
+		<resource_kind>RAM</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>161</res_id>
+		<opcode>163</opcode>
+		<latency>0</latency>
+		<delay>0.2413</delay>
+		<module_name>SobelFilter_Add_6Ux4U_7S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>64.1421</unit_area>
+		<comb_area>64.1421</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>3.1014</leakage_power>
+		<net_power>6687.7500</net_power>
+		<internal_power>9401.1200</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>164</res_id>
+		<opcode>166</opcode>
+		<latency>0</latency>
+		<delay>0.2542</delay>
+		<module_name>SobelFilter_Add_6Ux5U_7S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>64.3644</unit_area>
+		<comb_area>64.3644</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>3.1830</leakage_power>
+		<net_power>7113.8000</net_power>
+		<internal_power>10438.9000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>166</res_id>
+		<opcode>168</opcode>
+		<latency>0</latency>
+		<delay>0.2156</delay>
+		<module_name>SobelFilter_Sub_6Sx3U_6S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>-</label>
+		<unit_area>61.4061</unit_area>
+		<comb_area>61.4061</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>3.2497</leakage_power>
+		<net_power>6893.4000</net_power>
+		<internal_power>8719.7100</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>167</res_id>
+		<opcode>169</opcode>
+		<latency>0</latency>
+		<delay>0.1849</delay>
+		<module_name>SobelFilter_Add_6Sx1U_6S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>42.9381</unit_area>
+		<comb_area>42.9381</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.9396</leakage_power>
+		<net_power>3930.0300</net_power>
+		<internal_power>4395.6500</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>168</res_id>
+		<opcode>170</opcode>
+		<latency>0</latency>
+		<delay>0.3008</delay>
+		<module_name>SobelFilter_Add_32Sx1U_32S_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>258.0561</unit_area>
+		<comb_area>258.0561</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>8.7541</leakage_power>
+		<net_power>14529.6000</net_power>
+		<internal_power>15351.5000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>202</res_id>
+		<opcode>205</opcode>
+		<latency>1</latency>
+		<setup_time>0.0655</setup_time>
+		<delay>0.1140</delay>
+		<module_name>SobelFilter_ROM_9X32_sharpening</module_name>
+		<resource_kind>ROM</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>173</res_id>
+		<opcode>175</opcode>
+		<latency>0</latency>
+		<delay>0.2009</delay>
+		<module_name>SobelFilter_Add_5Ux3U_5U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>45.6057</unit_area>
+		<comb_area>45.6057</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>2.2325</leakage_power>
+		<net_power>4862.7200</net_power>
+		<internal_power>7087.0400</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>179</res_id>
+		<opcode>181</opcode>
+		<latency>0</latency>
+		<delay>1.2679</delay>
+		<module_name>SobelFilter_Mul_32Ux32U_33U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>*</label>
+		<unit_area>4509.7830</unit_area>
+		<comb_area>4509.7830</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>177.8850</leakage_power>
+		<net_power>542968.0000</net_power>
+		<internal_power>1046910.0000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>183</res_id>
+		<opcode>185</opcode>
+		<latency>0</latency>
+		<delay>0.2018</delay>
+		<module_name>SobelFilter_Add_5Ux4U_6U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>56.5497</unit_area>
+		<comb_area>56.5497</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>2.7573</leakage_power>
+		<net_power>6006.5100</net_power>
+		<internal_power>8974.3400</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>186</res_id>
+		<opcode>188</opcode>
+		<latency>0</latency>
+		<delay>0.2097</delay>
+		<module_name>SobelFilter_Add_5Ux5U_6U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>62.3637</unit_area>
+		<comb_area>62.3637</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>3.1309</leakage_power>
+		<net_power>6663.4300</net_power>
+		<internal_power>10366.5000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>189</res_id>
+		<opcode>191</opcode>
+		<latency>0</latency>
+		<delay>0.3456</delay>
+		<module_name>SobelFilter_GreaterThan_32Sx9S_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>&gt;</label>
+		<unit_area>180.3024</unit_area>
+		<comb_area>180.3024</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>7.6434</leakage_power>
+		<net_power>14591.6000</net_power>
+		<internal_power>27900.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>190</res_id>
+		<opcode>192</opcode>
+		<latency>0</latency>
+		<delay>0.0394</delay>
+		<module_name>SobelFilter_N_Mux_24_2_21_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>172.3680</unit_area>
+		<comb_area>172.3680</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>15.7681</leakage_power>
+		<net_power>25754.1000</net_power>
+		<internal_power>28120.6000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>191</res_id>
+		<opcode>193</opcode>
+		<latency>0</latency>
+		<delay>0.0567</delay>
+		<module_name>SobelFilter_N_Mux_24_2_22_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>58.8240</unit_area>
+		<comb_area>58.8240</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>3.7704</leakage_power>
+		<net_power>8141.4700</net_power>
+		<internal_power>7616.0200</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>192</res_id>
+		<opcode>194</opcode>
+		<latency>0</latency>
+		<delay>0.0394</delay>
+		<module_name>SobelFilter_N_Mux_16_2_23_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>114.9120</unit_area>
+		<comb_area>114.9120</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>10.5120</leakage_power>
+		<net_power>17169.4000</net_power>
+		<internal_power>18747.0000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>193</res_id>
+		<opcode>195</opcode>
+		<latency>0</latency>
+		<delay>0.0567</delay>
+		<module_name>SobelFilter_N_Mux_16_2_24_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>42.4080</unit_area>
+		<comb_area>42.4080</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>2.8833</leakage_power>
+		<net_power>5901.9800</net_power>
+		<internal_power>5645.7300</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>194</res_id>
+		<opcode>196</opcode>
+		<latency>0</latency>
+		<delay>0.0394</delay>
+		<module_name>SobelFilter_N_Mux_32_2_25_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>229.8240</unit_area>
+		<comb_area>229.8240</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>21.0241</leakage_power>
+		<net_power>34338.8000</net_power>
+		<internal_power>37494.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>195</res_id>
+		<opcode>197</opcode>
+		<latency>0</latency>
+		<delay>0.0567</delay>
+		<module_name>SobelFilter_N_Mux_32_2_26_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>75.2400</unit_area>
+		<comb_area>75.2400</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>4.6575</leakage_power>
+		<net_power>10381.0000</net_power>
+		<internal_power>9586.3100</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<res_id>196</res_id>
+		<opcode>198</opcode>
+		<latency>0</latency>
+		<delay>0.1930</delay>
+		<module_name>SobelFilter_Add_5Ux2U_5U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>+</label>
+		<unit_area>36.7137</unit_area>
+		<comb_area>36.7137</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>1.5134</leakage_power>
+		<net_power>3452.1700</net_power>
+		<internal_power>4627.5800</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<pm_ops>
+		<thread>do_filter</thread>
+		<op>
+			<id>29824</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="18">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29825</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="19">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29826</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="18">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29827</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="19">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29828</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="21">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29829</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="19">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29830</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="18">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29831</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="19">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29832</id>
+			<opcode>207</opcode>
+			<source_loc>36980</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="18">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29382</id>
+			<opcode>105</opcode>
+			<source_loc>36203</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29383</id>
+			<opcode>110</opcode>
+			<source_loc>36203</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29833</id>
+			<opcode>206</opcode>
+			<source_loc>36203</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29385</id>
+			<opcode>157</opcode>
+			<source_loc>31366</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="10">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="34">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29386</id>
+			<opcode>108</opcode>
+			<source_loc>31419</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="14">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29387</id>
+			<opcode>105</opcode>
+			<source_loc>18197</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29388</id>
+			<opcode>110</opcode>
+			<source_loc>18199</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29834</id>
+			<opcode>209</opcode>
+			<source_loc>36226</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="14">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29389</id>
+			<opcode>112</opcode>
+			<source_loc>18204</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29390</id>
+			<opcode>113</opcode>
+			<source_loc>18169</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29391</id>
+			<opcode>112</opcode>
+			<source_loc>18207</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29392</id>
+			<opcode>113</opcode>
+			<source_loc>18164</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29835</id>
+			<opcode>208</opcode>
+			<source_loc>36237</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29394</id>
+			<opcode>12</opcode>
+			<source_loc>31445,31446,31455,36244,31459,37294,36245</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="49">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="37">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29836</id>
+			<opcode>209</opcode>
+			<source_loc>36252</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29395</id>
+			<opcode>114</opcode>
+			<source_loc>18226</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29396</id>
+			<opcode>117</opcode>
+			<source_loc>18213</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29397</id>
+			<opcode>118</opcode>
+			<source_loc>39379</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29398</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29399</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29400</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29401</id>
+			<opcode>119</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29402</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29403</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29404</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29405</id>
+			<opcode>120</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29406</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29407</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29408</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29409</id>
+			<opcode>121</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29410</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29411</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29412</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29413</id>
+			<opcode>122</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29414</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29415</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29416</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29417</id>
+			<opcode>123</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29418</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29419</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29420</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29421</id>
+			<opcode>124</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29422</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29423</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29424</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29425</id>
+			<opcode>125</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29426</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29427</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29428</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18298,18276,18287</sub_loc>
+		</source_loc>
+		<op>
+			<id>29429</id>
+			<opcode>126</opcode>
+			<source_loc>18298,18276,18287</source_loc>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29430</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29431</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29432</id>
+			<opcode>105</opcode>
+			<source_loc>18295</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29433</id>
+			<opcode>115</opcode>
+			<source_loc>18297</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29434</id>
+			<opcode>127</opcode>
+			<source_loc>18298</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29435</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29436</id>
+			<opcode>128</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29437</id>
+			<opcode>129</opcode>
+			<source_loc>18298</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29438</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29439</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29440</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29441</id>
+			<opcode>130</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29442</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29443</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29444</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29445</id>
+			<opcode>131</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29446</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29447</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29448</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29449</id>
+			<opcode>132</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29450</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29451</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29452</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29453</id>
+			<opcode>133</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29456</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29457</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29458</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29459</id>
+			<opcode>134</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29461</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29462</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29463</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29464</id>
+			<opcode>135</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29465</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29466</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29471</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29475</id>
+			<opcode>136</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29477</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29478</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29479</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18287,18276</sub_loc>
+		</source_loc>
+		<op>
+			<id>29480</id>
+			<opcode>137</opcode>
+			<source_loc>18287,18276</source_loc>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29481</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29482</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29483</id>
+			<opcode>138</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29484</id>
+			<opcode>105</opcode>
+			<source_loc>18284</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29485</id>
+			<opcode>115</opcode>
+			<source_loc>18286</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29486</id>
+			<opcode>127</opcode>
+			<source_loc>18287</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29487</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29488</id>
+			<opcode>129</opcode>
+			<source_loc>18287</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29489</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29490</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29491</id>
+			<opcode>138</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29492</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29493</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29494</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29495</id>
+			<opcode>139</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29496</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29497</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29498</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29499</id>
+			<opcode>139</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29500</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29501</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29502</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29503</id>
+			<opcode>139</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29504</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29505</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29506</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29507</id>
+			<opcode>139</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29508</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29509</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29510</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29511</id>
+			<opcode>140</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29512</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29513</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29514</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29515</id>
+			<opcode>140</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29516</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29517</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29518</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29519</id>
+			<opcode>141</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29520</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29521</id>
+			<opcode>105</opcode>
+			<source_loc>18273</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29522</id>
+			<opcode>115</opcode>
+			<source_loc>18275</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29523</id>
+			<opcode>127</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29524</id>
+			<opcode>129</opcode>
+			<source_loc>18276</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29525</id>
+			<opcode>142</opcode>
+			<source_loc>18302</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29526</id>
+			<opcode>143</opcode>
+			<source_loc>18249</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29527</id>
+			<opcode>142</opcode>
+			<source_loc>18305</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29528</id>
+			<opcode>143</opcode>
+			<source_loc>18244</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29837</id>
+			<opcode>208</opcode>
+			<source_loc>36375,36398,36421</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29530</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18331</sub_loc>
+		</source_loc>
+		<op>
+			<id>29531</id>
+			<opcode>144</opcode>
+			<source_loc>18331</source_loc>
+			<port>
+				<name>in17</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in16</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in15</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in14</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in13</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in12</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in11</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in10</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in9</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in8</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in7</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in6</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29532</id>
+			<opcode>158</opcode>
+			<source_loc>32093</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29533</id>
+			<opcode>147</opcode>
+			<source_loc>32119</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29534</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18344</sub_loc>
+		</source_loc>
+		<op>
+			<id>29535</id>
+			<opcode>144</opcode>
+			<source_loc>18344</source_loc>
+			<port>
+				<name>in17</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in16</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in15</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in14</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in13</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in12</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in11</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in10</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in9</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in8</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in7</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in6</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29536</id>
+			<opcode>158</opcode>
+			<source_loc>32169</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29537</id>
+			<opcode>147</opcode>
+			<source_loc>32195</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29538</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>18357</sub_loc>
+		</source_loc>
+		<op>
+			<id>29539</id>
+			<opcode>148</opcode>
+			<source_loc>18357</source_loc>
+			<port>
+				<name>in12</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in11</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in10</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in9</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in8</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in7</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in6</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in5</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29540</id>
+			<opcode>158</opcode>
+			<source_loc>32245</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="20">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29541</id>
+			<opcode>147</opcode>
+			<source_loc>32271</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="33">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29542</id>
+			<opcode>114</opcode>
+			<source_loc>18361</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29543</id>
+			<opcode>117</opcode>
+			<source_loc>18320</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29544</id>
+			<opcode>149</opcode>
+			<source_loc>18365</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29545</id>
+			<opcode>151</opcode>
+			<source_loc>18404</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29546</id>
+			<opcode>150</opcode>
+			<source_loc>18407</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29547</id>
+			<opcode>152</opcode>
+			<source_loc>18408</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29548</id>
+			<opcode>153</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29549</id>
+			<opcode>154</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29550</id>
+			<opcode>155</opcode>
+			<source_loc>18462</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29551</id>
+			<opcode>156</opcode>
+			<source_loc>18464</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29552</id>
+			<opcode>160</opcode>
+			<source_loc>18466</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29838</id>
+			<opcode>204</opcode>
+			<source_loc>36483</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29553</id>
+			<opcode>153</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29554</id>
+			<opcode>154</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29555</id>
+			<opcode>155</opcode>
+			<source_loc>18478</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29556</id>
+			<opcode>156</opcode>
+			<source_loc>18480</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29557</id>
+			<opcode>160</opcode>
+			<source_loc>18482</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29558</id>
+			<opcode>163</opcode>
+			<source_loc>36489</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29839</id>
+			<opcode>204</opcode>
+			<source_loc>36489</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29559</id>
+			<opcode>153</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29560</id>
+			<opcode>154</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29561</id>
+			<opcode>155</opcode>
+			<source_loc>18494</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29562</id>
+			<opcode>156</opcode>
+			<source_loc>18496</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29563</id>
+			<opcode>160</opcode>
+			<source_loc>18498</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29564</id>
+			<opcode>166</opcode>
+			<source_loc>36495</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29840</id>
+			<opcode>204</opcode>
+			<source_loc>36495</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29565</id>
+			<opcode>154</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29566</id>
+			<opcode>152</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29567</id>
+			<opcode>168</opcode>
+			<source_loc>18414</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29568</id>
+			<opcode>156</opcode>
+			<source_loc>18416</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29569</id>
+			<opcode>169</opcode>
+			<source_loc>18418</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29841</id>
+			<opcode>204</opcode>
+			<source_loc>36465</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29570</id>
+			<opcode>154</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29571</id>
+			<opcode>152</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29572</id>
+			<opcode>168</opcode>
+			<source_loc>18430</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29573</id>
+			<opcode>156</opcode>
+			<source_loc>18432</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29574</id>
+			<opcode>169</opcode>
+			<source_loc>18434</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29575</id>
+			<opcode>163</opcode>
+			<source_loc>36471</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29842</id>
+			<opcode>204</opcode>
+			<source_loc>36471</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29576</id>
+			<opcode>154</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29577</id>
+			<opcode>152</opcode>
+			<source_loc>38936</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29578</id>
+			<opcode>168</opcode>
+			<source_loc>18446</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29579</id>
+			<opcode>156</opcode>
+			<source_loc>18448</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29580</id>
+			<opcode>169</opcode>
+			<source_loc>18450</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29581</id>
+			<opcode>166</opcode>
+			<source_loc>36477</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29843</id>
+			<opcode>204</opcode>
+			<source_loc>36477</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29582</id>
+			<opcode>156</opcode>
+			<source_loc>18371</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29844</id>
+			<opcode>204</opcode>
+			<source_loc>36445</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29583</id>
+			<opcode>156</opcode>
+			<source_loc>18383</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29584</id>
+			<opcode>163</opcode>
+			<source_loc>36451</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29845</id>
+			<opcode>204</opcode>
+			<source_loc>36451</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29585</id>
+			<opcode>156</opcode>
+			<source_loc>18395</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29586</id>
+			<opcode>166</opcode>
+			<source_loc>36457</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29846</id>
+			<opcode>204</opcode>
+			<source_loc>36457</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>CE</name>
+				<datatype W="9">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29587</id>
+			<opcode>170</opcode>
+			<source_loc>18510</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29588</id>
+			<opcode>105</opcode>
+			<source_loc>36702,36713,36724</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29589</id>
+			<opcode>110</opcode>
+			<source_loc>36702,36713,36724</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29847</id>
+			<opcode>205</opcode>
+			<source_loc>36702,36713,36724</source_loc>
+			<port>
+				<name>CE</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29591</id>
+			<opcode>105</opcode>
+			<source_loc>18825</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29592</id>
+			<opcode>115</opcode>
+			<source_loc>18827</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29593</id>
+			<opcode>175</opcode>
+			<source_loc>18829</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29848</id>
+			<opcode>203</opcode>
+			<source_loc>36707</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29595</id>
+			<opcode>181</opcode>
+			<source_loc>18836</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29596</id>
+			<opcode>147</opcode>
+			<source_loc>18837</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29597</id>
+			<opcode>105</opcode>
+			<source_loc>18844</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29598</id>
+			<opcode>115</opcode>
+			<source_loc>18846</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29599</id>
+			<opcode>175</opcode>
+			<source_loc>18848</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29604</id>
+			<opcode>185</opcode>
+			<source_loc>36718</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29849</id>
+			<opcode>203</opcode>
+			<source_loc>36718</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29606</id>
+			<opcode>181</opcode>
+			<source_loc>18855</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29607</id>
+			<opcode>147</opcode>
+			<source_loc>18856</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29608</id>
+			<opcode>105</opcode>
+			<source_loc>18863</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29609</id>
+			<opcode>115</opcode>
+			<source_loc>18865</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29610</id>
+			<opcode>175</opcode>
+			<source_loc>18867</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29611</id>
+			<opcode>188</opcode>
+			<source_loc>36729</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29850</id>
+			<opcode>203</opcode>
+			<source_loc>36729</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29616</id>
+			<opcode>181</opcode>
+			<source_loc>18874</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29617</id>
+			<opcode>147</opcode>
+			<source_loc>18875</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29618</id>
+			<opcode>112</opcode>
+			<source_loc>18877</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29619</id>
+			<opcode>113</opcode>
+			<source_loc>18818</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29620</id>
+			<opcode>112</opcode>
+			<source_loc>18880</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29621</id>
+			<opcode>113</opcode>
+			<source_loc>18813</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29622</id>
+			<opcode>191</opcode>
+			<source_loc>18912</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29623</id>
+			<opcode>191</opcode>
+			<source_loc>18898</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29624</id>
+			<opcode>191</opcode>
+			<source_loc>18884</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29625</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39417,18905</sub_loc>
+		</source_loc>
+		<op>
+			<id>29629</id>
+			<opcode>192</opcode>
+			<source_loc>39417,18905</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29630</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39426,18900</sub_loc>
+		</source_loc>
+		<op>
+			<id>29631</id>
+			<opcode>193</opcode>
+			<source_loc>39426,18900</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29632</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39416,18891</sub_loc>
+		</source_loc>
+		<op>
+			<id>29633</id>
+			<opcode>194</opcode>
+			<source_loc>39416,18891</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29634</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39425,18886</sub_loc>
+		</source_loc>
+		<op>
+			<id>29635</id>
+			<opcode>195</opcode>
+			<source_loc>39425,18886</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29639</id>
+			<opcode>147</opcode>
+			<source_loc>18933</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29642</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39418,18919</sub_loc>
+		</source_loc>
+		<op>
+			<id>29643</id>
+			<opcode>196</opcode>
+			<source_loc>39418,18919</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29644</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39427,18914</sub_loc>
+		</source_loc>
+		<op>
+			<id>29645</id>
+			<opcode>197</opcode>
+			<source_loc>39427,18914</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29646</id>
+			<opcode>147</opcode>
+			<source_loc>18935</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29647</id>
+			<opcode>105</opcode>
+			<source_loc>36606,36617,36628</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29648</id>
+			<opcode>110</opcode>
+			<source_loc>36606,36617,36628</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29851</id>
+			<opcode>205</opcode>
+			<source_loc>36606,36617,36628</source_loc>
+			<port>
+				<name>CE</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29650</id>
+			<opcode>105</opcode>
+			<source_loc>18678</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29651</id>
+			<opcode>115</opcode>
+			<source_loc>18680</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29652</id>
+			<opcode>198</opcode>
+			<source_loc>18682</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29852</id>
+			<opcode>203</opcode>
+			<source_loc>36611</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29654</id>
+			<opcode>181</opcode>
+			<source_loc>18689</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29655</id>
+			<opcode>147</opcode>
+			<source_loc>18690</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29656</id>
+			<opcode>105</opcode>
+			<source_loc>18697</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29657</id>
+			<opcode>115</opcode>
+			<source_loc>18699</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29658</id>
+			<opcode>198</opcode>
+			<source_loc>18701</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29659</id>
+			<opcode>185</opcode>
+			<source_loc>36622</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29853</id>
+			<opcode>203</opcode>
+			<source_loc>36622</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29661</id>
+			<opcode>181</opcode>
+			<source_loc>18708</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29662</id>
+			<opcode>147</opcode>
+			<source_loc>18709</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29663</id>
+			<opcode>105</opcode>
+			<source_loc>18716</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29664</id>
+			<opcode>115</opcode>
+			<source_loc>18718</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29665</id>
+			<opcode>198</opcode>
+			<source_loc>18720</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29666</id>
+			<opcode>188</opcode>
+			<source_loc>36633</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29854</id>
+			<opcode>203</opcode>
+			<source_loc>36633</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29668</id>
+			<opcode>181</opcode>
+			<source_loc>18727</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29669</id>
+			<opcode>147</opcode>
+			<source_loc>18728</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29670</id>
+			<opcode>112</opcode>
+			<source_loc>18730</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29671</id>
+			<opcode>113</opcode>
+			<source_loc>18671</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29672</id>
+			<opcode>112</opcode>
+			<source_loc>18733</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29673</id>
+			<opcode>113</opcode>
+			<source_loc>18666</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29674</id>
+			<opcode>191</opcode>
+			<source_loc>18765</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29675</id>
+			<opcode>191</opcode>
+			<source_loc>18751</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29676</id>
+			<opcode>191</opcode>
+			<source_loc>18737</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29677</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39420,18758</sub_loc>
+		</source_loc>
+		<op>
+			<id>29678</id>
+			<opcode>192</opcode>
+			<source_loc>39420,18758</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29679</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39429,18753</sub_loc>
+		</source_loc>
+		<op>
+			<id>29680</id>
+			<opcode>193</opcode>
+			<source_loc>39429,18753</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29681</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39419,18744</sub_loc>
+		</source_loc>
+		<op>
+			<id>29683</id>
+			<opcode>194</opcode>
+			<source_loc>39419,18744</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29689</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39428,18739</sub_loc>
+		</source_loc>
+		<op>
+			<id>29690</id>
+			<opcode>195</opcode>
+			<source_loc>39428,18739</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29693</id>
+			<opcode>147</opcode>
+			<source_loc>18786</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29699</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39421,18772</sub_loc>
+		</source_loc>
+		<op>
+			<id>29700</id>
+			<opcode>196</opcode>
+			<source_loc>39421,18772</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29701</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39430,18767</sub_loc>
+		</source_loc>
+		<op>
+			<id>29702</id>
+			<opcode>197</opcode>
+			<source_loc>39430,18767</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29703</id>
+			<opcode>147</opcode>
+			<source_loc>18788</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29704</id>
+			<opcode>105</opcode>
+			<source_loc>36510,36521,36532</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29705</id>
+			<opcode>110</opcode>
+			<source_loc>36510,36521,36532</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29855</id>
+			<opcode>205</opcode>
+			<source_loc>36510,36521,36532</source_loc>
+			<port>
+				<name>CE</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29707</id>
+			<opcode>105</opcode>
+			<source_loc>18536</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29708</id>
+			<opcode>115</opcode>
+			<source_loc>18538</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29856</id>
+			<opcode>203</opcode>
+			<source_loc>36515</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29710</id>
+			<opcode>181</opcode>
+			<source_loc>18545</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29711</id>
+			<opcode>147</opcode>
+			<source_loc>18546</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29712</id>
+			<opcode>105</opcode>
+			<source_loc>18553</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29716</id>
+			<opcode>115</opcode>
+			<source_loc>18555</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29723</id>
+			<opcode>185</opcode>
+			<source_loc>36526</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29857</id>
+			<opcode>203</opcode>
+			<source_loc>36526</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29725</id>
+			<opcode>181</opcode>
+			<source_loc>18562</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29726</id>
+			<opcode>147</opcode>
+			<source_loc>18563</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29727</id>
+			<opcode>105</opcode>
+			<source_loc>18570</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29740</id>
+			<opcode>115</opcode>
+			<source_loc>18572</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="4">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29741</id>
+			<opcode>188</opcode>
+			<source_loc>36537</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="5">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29858</id>
+			<opcode>203</opcode>
+			<source_loc>36537</source_loc>
+			<port>
+				<name>DIN</name>
+				<datatype W="6">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29743</id>
+			<opcode>181</opcode>
+			<source_loc>18579</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29744</id>
+			<opcode>147</opcode>
+			<source_loc>18580</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29745</id>
+			<opcode>112</opcode>
+			<source_loc>18582</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29764</id>
+			<opcode>113</opcode>
+			<source_loc>18529</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29765</id>
+			<opcode>112</opcode>
+			<source_loc>18585</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="2">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29766</id>
+			<opcode>113</opcode>
+			<source_loc>18524</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="3">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29767</id>
+			<opcode>191</opcode>
+			<source_loc>18617</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29768</id>
+			<opcode>191</opcode>
+			<source_loc>18603</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29769</id>
+			<opcode>191</opcode>
+			<source_loc>18589</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="9">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29770</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39423,18610</sub_loc>
+		</source_loc>
+		<op>
+			<id>29771</id>
+			<opcode>192</opcode>
+			<source_loc>39423,18610</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29772</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39432,18605</sub_loc>
+		</source_loc>
+		<op>
+			<id>29773</id>
+			<opcode>193</opcode>
+			<source_loc>39432,18605</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="24">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29774</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39422,18596</sub_loc>
+		</source_loc>
+		<op>
+			<id>29775</id>
+			<opcode>194</opcode>
+			<source_loc>39422,18596</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29776</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39431,18591</sub_loc>
+		</source_loc>
+		<op>
+			<id>29777</id>
+			<opcode>195</opcode>
+			<source_loc>39431,18591</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="16">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29778</id>
+			<opcode>147</opcode>
+			<source_loc>18638</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29779</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39424,18624</sub_loc>
+		</source_loc>
+		<op>
+			<id>29780</id>
+			<opcode>196</opcode>
+			<source_loc>39424,18624</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<source_loc>
+			<id>29781</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>39433,18619</sub_loc>
+		</source_loc>
+		<op>
+			<id>29782</id>
+			<opcode>197</opcode>
+			<source_loc>39433,18619</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29783</id>
+			<opcode>147</opcode>
+			<source_loc>18640</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="33">sc_int</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="32">sc_int</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<resource>
+		<res_id>198</res_id>
+		<opcode>200</opcode>
+		<latency>0</latency>
+		<delay>0.1248</delay>
+		<module_name>SobelFilter_gen_busy_r_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_DPOPT</module_origin>
+		<unit_area>9.5760</unit_area>
+		<comb_area>9.5760</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.4791</leakage_power>
+		<net_power>1414.2600</net_power>
+		<internal_power>1648.1700</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<pm_ops>
+		<thread>i_rgb_gen_busy</thread>
+		<op>
+			<id>29982</id>
+			<opcode>200</opcode>
+			<source_loc>29688,29687,29686,29685,37867,37876,37877,29717,29721,29720,37874,29728,29733,29729,29748,29756,29751,29750,29749,37886,29760,37889,29763,29762</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in3</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in4</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="3">sc_uint</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<resource>
+		<res_id>199</res_id>
+		<opcode>201</opcode>
+		<latency>0</latency>
+		<delay>0.0600</delay>
+		<module_name>SobelFilter_N_Muxb_1_2_27_1</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>MUX(2)</label>
+		<unit_area>11.7477</unit_area>
+		<comb_area>11.7477</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.8186</leakage_power>
+		<net_power>1691.2800</net_power>
+		<internal_power>1984.1000</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<pm_ops>
+		<thread>i_rgb_gen_unvalidated_req</thread>
+		<op>
+			<id>29983</id>
+			<opcode>201</opcode>
+			<source_loc>39437</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="1">bool</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="1">bool</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<pm_ops>
+		<thread>i_rgb_gen_do_stall_reg</thread>
+		<op>
+			<id>29984</id>
+			<opcode>154</opcode>
+			<source_loc>29105</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29985</id>
+			<opcode>152</opcode>
+			<source_loc>29103</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+		<op>
+			<id>29986</id>
+			<opcode>152</opcode>
+			<source_loc>29106</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<pm_ops>
+		<thread>i_rgb_gen_do_stall_reg_full</thread>
+		<op>
+			<id>29989</id>
+			<opcode>152</opcode>
+			<source_loc>28757</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<pm_ops>
+		<thread>i_rgb_gen_do_reg_vld</thread>
+		<op>
+			<id>29990</id>
+			<opcode>201</opcode>
+			<source_loc>39438</source_loc>
+			<port>
+				<name>in3</name>
+				<datatype W="1">bool</datatype>
+			</port>
+			<port>
+				<name>in2</name>
+				<datatype W="1">bool</datatype>
+			</port>
+			<port>
+				<name>ctrl1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<pm_ops>
+		<thread>o_result_gen_vld</thread>
+		<op>
+			<id>29991</id>
+			<opcode>153</opcode>
+			<source_loc>27529</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<pm_ops>
+		<thread>o_result_gen_unacked_req</thread>
+	</pm_ops>
+	<pm_ops>
+		<thread>o_result_gen_stalling</thread>
+		<op>
+			<id>29992</id>
+			<opcode>152</opcode>
+			<source_loc>27000</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<resource>
+		<res_id>200</res_id>
+		<opcode>202</opcode>
+		<latency>0</latency>
+		<delay>0.0708</delay>
+		<module_name>SobelFilter_Xor_1Ux1U_1U_1</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<label>^</label>
+		<unit_area>4.4460</unit_area>
+		<comb_area>4.4460</comb_area>
+		<seq_area>0.0000</seq_area>
+		<leakage_power>0.2331</leakage_power>
+		<net_power>478.2240</net_power>
+		<internal_power>613.4580</internal_power>
+		<reg_bits>0</reg_bits>
+		<part_characterization>1</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<pm_ops>
+		<thread>o_result_m_req_gen_active</thread>
+		<op>
+			<id>29993</id>
+			<opcode>202</opcode>
+			<source_loc>26849</source_loc>
+			<port>
+				<name>in2</name>
+				<datatype W="1">bool</datatype>
+			</port>
+			<port>
+				<name>in1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<pm_ops>
+		<thread>o_result_m_req_gen_prev_trig_reg</thread>
+	</pm_ops>
+	<pm_ops>
+		<thread>o_result_m_req_gen_next_trig_reg</thread>
+		<op>
+			<id>29994</id>
+			<opcode>154</opcode>
+			<source_loc>26029</source_loc>
+			<port>
+				<name>in1</name>
+				<datatype W="1">bool</datatype>
+			</port>
+			<port>
+				<name>out1</name>
+				<datatype W="1">sc_uint</datatype>
+			</port>
+		</op>
+	</pm_ops>
+	<message>
+		<code_num>2588</code_num>
+		<severity>WARNING</severity>
+		<message_text>The HLS_SET_OUTPUT_OPTIONS directive has been applied to non-output 'i_rgb.m_use_stall_reg_ip' and will be ignored.
+</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h</source_path>
+		<source_line>1696</source_line>
+		<phase>pm</phase>
+		<order>10</order>
+	</message>
+	<message>
+		<code_num>847</code_num>
+		<severity>WARNING</severity>
+		<message_text>An input delay was not specified for &quot;i_rgb.data&quot;. A value of 0.114ns ( Clk-&gt;Q ), will be used as the input delay.</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h</source_path>
+		<source_line>494</source_line>
+		<phase>pm</phase>
+		<order>11</order>
+	</message>
+	<message>
+		<code_num>847</code_num>
+		<severity>WARNING</severity>
+		<message_text>An input delay was not specified for &quot;i_rgb.vld&quot;. A value of 0.114ns ( Clk-&gt;Q ), will be used as the input delay.</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h</source_path>
+		<source_line>493</source_line>
+		<phase>pm</phase>
+		<order>12</order>
+	</message>
+	<message>
+		<code_num>847</code_num>
+		<severity>WARNING</severity>
+		<message_text>An input delay was not specified for &quot;i_rst&quot;. A value of 0.114ns ( Clk-&gt;Q ), will be used as the input delay.</message_text>
+		<source_path>../SobelFilter.h</source_path>
+		<source_line>16</source_line>
+		<phase>pm</phase>
+		<order>13</order>
+	</message>
+	<message>
+		<code_num>847</code_num>
+		<severity>WARNING</severity>
+		<message_text>An input delay was not specified for &quot;o_result.busy&quot;. A value of 0.114ns ( Clk-&gt;Q ), will be used as the input delay.</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h</source_path>
+		<source_line>4302</source_line>
+		<phase>pm</phase>
+		<order>14</order>
+	</message>
+	<sched_order>
+		<thread>o_result_m_req_gen_prev_trig_reg</thread>
+		<value>1</value>
+	</sched_order>
+	<sched_order>
+		<thread>o_result_m_req_gen_active</thread>
+		<value>2</value>
+	</sched_order>
+	<sched_order>
+		<thread>o_result_gen_vld</thread>
+		<value>3</value>
+	</sched_order>
+	<sched_order>
+		<thread>o_result_m_req_gen_next_trig_reg</thread>
+		<value>4</value>
+	</sched_order>
+	<sched_order>
+		<thread>i_rgb_gen_unvalidated_req</thread>
+		<value>5</value>
+	</sched_order>
+	<sched_order>
+		<thread>i_rgb_gen_do_stall_reg</thread>
+		<value>6</value>
+	</sched_order>
+	<sched_order>
+		<thread>do_filter</thread>
+		<value>7</value>
+	</sched_order>
+	<sched_order>
+		<thread>o_result_gen_stalling</thread>
+		<value>8</value>
+	</sched_order>
+	<sched_order>
+		<thread>o_result_gen_unacked_req</thread>
+		<value>9</value>
+	</sched_order>
+	<sched_order>
+		<thread>i_rgb_gen_do_stall_reg_full</thread>
+		<value>10</value>
+	</sched_order>
+	<sched_order>
+		<thread>i_rgb_gen_do_reg_vld</thread>
+		<value>11</value>
+	</sched_order>
+	<sched_order>
+		<thread>i_rgb_gen_busy</thread>
+		<value>12</value>
+	</sched_order>
+	<phase_complete>pm</phase_complete>
+</tool_log>

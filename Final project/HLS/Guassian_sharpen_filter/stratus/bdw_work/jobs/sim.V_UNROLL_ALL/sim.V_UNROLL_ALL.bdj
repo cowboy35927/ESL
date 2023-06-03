@@ -1,0 +1,12 @@
+15899		// ppid
+15902		// pid
+ws26	// host name
+bdw_work/trace/sim.V_UNROLL_ALL.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685051863	// start time: Fri May 26 05:57:43 2023
+1685054843	// end time:   Fri May 26 06:47:23 2023
+make --no-print-directory -f Makefile CWBExec_sim=1 sim_V_UNROLL_ALL
+

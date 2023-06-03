@@ -1,0 +1,12 @@
+4503		// ppid
+4506		// pid
+ws26	// host name
+bdw_work/trace/sim.B.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685085276	// start time: Fri May 26 15:14:36 2023
+1685085286	// end time:   Fri May 26 15:14:46 2023
+bdw_work/sims/B/sim_B ../lena_std_short.bmp out.bmp
+

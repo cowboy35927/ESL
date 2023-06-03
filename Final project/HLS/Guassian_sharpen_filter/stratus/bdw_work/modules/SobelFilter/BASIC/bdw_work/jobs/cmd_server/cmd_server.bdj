@@ -1,0 +1,12 @@
+9639		// ppid
+9644		// pid
+ws26	// host name
+-		// log file
+3		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+1		// background
+1685055698	// start time: Fri May 26 07:01:38 2023
+1685055914	// end time:   Fri May 26 07:05:14 2023
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/bin/bdw_cmd_shell -dpopt --locallogfile /dev/null -x bdw_server_start
+

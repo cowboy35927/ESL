@@ -1,0 +1,8 @@
+bdw_work/sims/top_V_PIPELINE.v
+bdw_work/wrappers/SobelFilter_cosim.v
+bdw_work/modules/SobelFilter/PIPELINE/SobelFilter_rtl.v
+bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_DivRem_4.v
+bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_ROM_9X32_sharpening.v
+bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_RAM_45X32_3.v
+bdw_work/modules/SobelFilter/PIPELINE/v_rtl/SobelFilter_RAM_9X24_1.v
+

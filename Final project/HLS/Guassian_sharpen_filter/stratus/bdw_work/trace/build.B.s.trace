@@ -1,0 +1,34 @@
+bdw_wrapgen -project project.tcl -module SobelFilter "-Ibdw_work/wrappers   -DCLOCK_PERIOD=10.0 -g  "
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/bdw_tracegen -module SobelFilter  
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/bdw_shell /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/tcl/bdw_siminfo.tcl project.tcl B
+Generating dependencies for ../System.cpp
+Generating dependencies for ../Testbench.cpp
+Generating dependencies for ../main.cpp
+Generating dependencies for ../SobelFilter.cpp 
+make[4]: Nothing to be done for `bdw_work/wrappers/SobelFilter_wrap.h'.
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/9.3/bin/g++ -o bdw_work/sims/B/main.o -I./ -Ibdw_work/wrappers   -I..  -c -DCLOCK_PERIOD=10.0 -g    -fPIC  -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 ../main.cpp
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/9.3/bin/g++ -o bdw_work/sims/B/Testbench.o -I./ -Ibdw_work/wrappers   -I..  -c -DCLOCK_PERIOD=10.0 -g    -fPIC  -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 ../Testbench.cpp
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/9.3/bin/g++ -o bdw_work/sims/B/System.o -I./ -Ibdw_work/wrappers   -I..  -c -DCLOCK_PERIOD=10.0 -g    -fPIC  -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 ../System.cpp
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/9.3/bin/g++  -I./ -Ibdw_work/wrappers   -I..  -c -DCLOCK_PERIOD=10.0 -g    -fPIC  -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/include  -DBDW_HUB=1    -DBDW_USE_SCV=0   -o bdw_work/sims/B/SobelFilter.o  bdw_work/wrappers/SobelFilter_wrap.cpp
+In file included from /home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/SobelFilter.h:7,
+                 from /home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/SobelFilter.cpp:6,
+                 from bdw_work/wrappers/SobelFilter_wrap.cpp:69:
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_fixed.h: In instantiation of 'cynw_fixed<(((W + W1) + (((O_MODE == sc_dt::SC_WRAP) && (Q_MODE == sc_dt::SC_TRN)) ? 1 : 2)) + ((I1 < 0) ? (- I1) : 0)), ((I + W1) - I1)> operator/(const cynw_fixed<W1, I1, Q1, O1, N1>&, const cynw_fixed<W1, I1, Q_MODE1, O_MODE1, N_BITS1>&) [with int W = 32; int I = 32; sc_dt::sc_q_mode Q_MODE = sc_dt::SC_TRN; sc_dt::sc_o_mode O_MODE = sc_dt::SC_WRAP; int N_BITS = 0; int W1 = 112; int I1 = 56; sc_dt::sc_q_mode Q_MODE1 = sc_dt::SC_TRN; sc_dt::sc_o_mode O_MODE1 = sc_dt::SC_WRAP; int N_BITS1 = 0]':
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_fixed.h:5477:17:   required from 'cynw_fixed<(((WW + W) + (((O_MODE == sc_dt::SC_WRAP) && (Q_MODE == sc_dt::SC_TRN)) ? 1 : 2)) + ((I < 0) ? (- I) : 0)), ((WW + W) - I)> operator/(const sc_dt::sc_int<WW>&, const cynw_fixed<W1, I1, Q1, O1, N1>&) [with int W = 112; int I = 56; sc_dt::sc_q_mode Q_MODE = sc_dt::SC_TRN; sc_dt::sc_o_mode O_MODE = sc_dt::SC_WRAP; int N_BITS = 0; int WW = 32]'
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_fixed.h:5519:17:   required from 'cynw_fixed<(((((int)(sizeof (int)) * 8) + W) + (((O_MODE == sc_dt::SC_WRAP) && (Q_MODE == sc_dt::SC_TRN)) ? 1 : 2)) + ((I < 0) ? (- I) : 0)), ((((int)(sizeof (int)) * 8) + W) - I)> operator/(const int&, const cynw_fixed<W1, I1, Q1, O1, N1>&) [with int W = 112; int I = 56; sc_dt::sc_q_mode Q_MODE = sc_dt::SC_TRN; sc_dt::sc_o_mode O_MODE = sc_dt::SC_WRAP; int N_BITS = 0]'
+/home/m111/m111064503/EE6470/Final/Guassian_sharpen_filter/SobelFilter.cpp:39:39:   required from here
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_fixed.h:5378:74: warning: left shift count >= width of type [-Wshift-count-overflow]
+ 5378 |        (left.value)==CYNW_MAXNEG && (right.value)==(CYNW_IVAL(W1))(~(1ull<<W1)))
+      |                                                                     ~~~~~^~~~~
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/9.3/bin/g++ -Wl,--export-dynamic   \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/lib-linux64 \
+        -Wl,--enable-new-dtags \
+	-o bdw_work/sims/B/sim_B \
+	bdw_work/sims/B/SobelFilter.o bdw_work/sims/B/main.o bdw_work/sims/B/Testbench.o bdw_work/sims/B/System.o  \
+	 \
+	 \
+        bdw_work/libesc/libesc.a \
+	 \
+	-L /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/lib/64bit -L /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit  -L /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/lib-linux64 -lscv -lsystemc  -lhubexec -lhub  -lbdw_st  

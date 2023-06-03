@@ -1,0 +1,7 @@
+make[3]: Nothing to be done for `bdw_work/wrappers/SobelFilter_wrap.h'.
+make --no-print-directory -f Makefile -j1 CWBExec_hls=1 hls_SobelFilter_PIPELINE
+make[4]: `bdw_work/modules/SobelFilter/PIPELINE/SobelFilter_rtl.cpp' is up to date.
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/bdw_shell /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/tcl/bdw_siminfo.tcl project.tcl V_PIPELINE
+make[4]: Nothing to be done for `bdw_work/wrappers/SobelFilter_wrap.h'.
+make[4]: `bdw_work/modules/SobelFilter/PIPELINE/SobelFilter_rtl.v' is up to date.
+bdw_wrapgen -project project.tcl -simconfig V_PIPELINE -top top

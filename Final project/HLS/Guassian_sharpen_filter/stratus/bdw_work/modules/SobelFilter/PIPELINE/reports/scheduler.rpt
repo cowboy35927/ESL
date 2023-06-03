@@ -1,0 +1,1304 @@
+Scheduler report for : o_result_m_req_gen_prev_trig_reg                                                           
+-------------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+o_result.m_req.m_pre  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_req.m_tri  8 (7:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_req.m_pre  8 (7:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : o_result_m_req_gen_active                                                                  
+------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+o_result.m_req.m_pre  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_req.m_tri  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_req.gen_a  4 (3:FALSE)      --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+o_result.m_req.activ  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : o_result_gen_vld                                                                           
+---------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+o_result.m_req_activ  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_unacked_r  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.gen_vld      4 (3:FALSE)      --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+o_result.vld.o_resul  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : o_result_m_req_gen_next_trig_reg                                                           
+-------------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+o_result.m_req.m_tri  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_req.gen_n  4 (3:FALSE)      --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+o_result.m_req.m_nex  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : i_rgb_gen_unvalidated_req                                                                  
+------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+i_rgb.m_unvalidated_  5 (4:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb                 7 (6:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_unvalidated_  8 (7:TRUE)       --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_busy_req_0.i  9 (8:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.vld.i_rgb.gen_  9 (8:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.gen_unvalidate  9 (8:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_unvalidated_  9 (8:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : i_rgb_gen_do_stall_reg                                                                     
+---------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+i_rgb                 3 (2:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_stall_reg.i_  4 (3:TRUE)       --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_stall_reg_fu  5 (4:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_stalling.i_r  5 (4:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_data_is_vali  5 (4:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.gen_do_stall_r  5 (4:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.gen_do_stall_r  5 (4:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.gen_do_stall_r  5 (4:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.data.i_rgb.gen  7 (6:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_stall_reg.i_  7 (6:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.gen_do_stall_r  6 (5:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_stall_reg.i_  10 (8:FALSE)     --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : do_filter                                                                                  
+--------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+i                     1 (0:FALSE)      --              FALSE  ../SobelFilter.cpp,l:43,c:14 -> c:15                
+                                                                                                                  
+i                     1 (0:FALSE)      --              FALSE  ../SobelFilter.cpp,l:56,c:14 -> c:15                
+                                                                                                                  
+total_sum.value.cynw  1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.cpp,l:42,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+val.value[1][0]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+i                     1 (0:FALSE)      --              FALSE  ../SobelFilter.cpp,l:41,c:9 -> c:10                 
+                                                                                                                  
+val.value[0][0]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][1]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][2]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][3]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][4]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][5]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][6]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][7]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][8]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][1]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][2]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][3]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][4]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][5]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][6]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][0]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][7]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][8]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][1]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][2]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][3]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][4]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][5]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][6]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][7]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][8]       1 (0:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+expon                 3 (1:TRUE)       --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 4 (1:TRUE)       --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 5 (1:TRUE)       --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 6 (1:TRUE)       --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 7 (1:TRUE)       --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 8 (1:TRUE)       --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 9 (1:TRUE)       --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 10 (1:TRUE)      --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon                 11 (1:TRUE)      --              FALSE  ../SobelFilter.cpp,l:30,c:19                        
+                                                                                                                  
+expon.value           16 (6:FALSE)     --              FALSE  @(f:../SobelFilter.cpp,l:30,c:19->f:/usr/cadtool/c  
+                                                                                                                  
+total_sum.value       16 (6:FALSE)     --              FALSE  @(f:../SobelFilter.cpp,l:42,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+i                     16 (6:FALSE)     --              FALSE  ../SobelFilter.cpp,l:43,c:14 -> c:22                
+                                                                                                                  
+Gaussian.value        16 (6:FALSE)     --              FALSE  @(f:../SobelFilter.cpp,l:37,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+j                     16 (6:FALSE)     --              FALSE  ../SobelFilter.cpp,l:44,c:15 -> c:16                
+                                                                                                                  
+                      16 (6:FALSE)     --              FALSE  f:../SobelFilter.cpp,l:43,c:23                      
+                                                                                                                  
+expon.value           17 (7:FALSE)     --              FALSE  @(f:../SobelFilter.cpp,l:30,c:19->f:/usr/cadtool/c  
+                                                                                                                  
+total_sum.value       17 (7:FALSE)     --              FALSE  @(f:../SobelFilter.cpp,l:42,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+j                     17 (7:FALSE)     --              FALSE  ../SobelFilter.cpp,l:44,c:15 -> c:23                
+                                                                                                                  
+Gaussian.value        17 (7:FALSE)     --              FALSE  @(f:../SobelFilter.cpp,l:37,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+expon                 18 (7:TRUE)      --              FALSE  ../SobelFilter.cpp,l:30,c:19 -> l:49,c:41           
+                                                                                                                  
+expon                 18 (7:TRUE)      --              FALSE  ../SobelFilter.cpp,l:30,c:19 -> l:49,c:41           
+                                                                                                                  
+                      19 (7:TRUE)      --              FALSE  f:../SobelFilter.cpp,l:43,c:19                      
+                                                                                                                  
+                      19 (7:TRUE)      --              FALSE  f:../SobelFilter.cpp,l:52,c:23                      
+                                                                                                                  
+                      19 (7:TRUE)      --              FALSE  f:../SobelFilter.cpp,l:44,c:24                      
+                                                                                                                  
+expon                 19 (7:TRUE)      --              FALSE  ../SobelFilter.cpp,l:30,c:19 -> l:49,c:41           
+                                                                                                                  
+                      19 (7:TRUE)      --              FALSE  f:../SobelFilter.cpp,l:52,c:25                      
+                                                                                                                  
+operator*             19 (7:TRUE)      --              FALSE  ../SobelFilter.cpp,l:49,c:32                        
+                                                                                                                  
+                      20 (7:TRUE)      --              FALSE  f:../SobelFilter.cpp,l:44,c:20                      
+                                                                                                                  
+operator+=::operator  20 (7:TRUE)      --              FALSE  ../SobelFilter.cpp,l:51,c:22                        
+                                                                                                                  
+Gaussian              20 (7:TRUE)      --              FALSE  ../SobelFilter.cpp,l:37,c:24 -> l:52,c:21           
+                                                                                                                  
+Gaussian.value        25 (12:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:37,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+i                     25 (12:FALSE)    --              FALSE  ../SobelFilter.cpp,l:56,c:14 -> c:22                
+                                                                                                                  
+Gaussian              26 (12:TRUE)     --              FALSE  ../SobelFilter.cpp,l:37,c:24 -> l:57,c:29           
+                                                                                                                  
+                      28 (12:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:56,c:23                      
+                                                                                                                  
+operator/::t3.operat  28 (12:TRUE)     --              FALSE  @(f:../SobelFilter.cpp,l:57,c:32->f:/usr/cadtool/c  
+                                                                                                                  
+                      29 (12:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:56,c:19                      
+                                                                                                                  
+Gaussian              29 (12:TRUE)     --              FALSE  ../SobelFilter.cpp,l:37,c:24 -> l:57,c:15           
+                                                                                                                  
+i_rgb.m_busy_req_0.r  31 (14:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_stalling.res  31 (14:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_req.m_tri  31 (14:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+v                     33 (16:FALSE)    --              FALSE  ../SobelFilter.cpp,l:69,c:21 -> c:23                
+                                                                                                                  
+val.value[0][0]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][1]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][2]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][3]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][4]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][5]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][6]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][7]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][8]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][0]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][1]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][2]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][3]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][4]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][5]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][6]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][7]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][8]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][0]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][1]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][2]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][3]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][4]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][5]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][6]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][7]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][8]       33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+i                     33 (16:FALSE)    --              FALSE  ../SobelFilter.cpp,l:41,c:9 -> l:284,c:7            
+                                                                                                                  
+Gaussian.value        33 (16:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:37,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+buffer                33 (16:FALSE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:104,c:16          
+                                                                                                                  
+sharpening            33 (16:FALSE)    --              FALSE  ../SobelFilter.cpp,l:29,c:11 -> l:68,c:2            
+                                                                                                                  
+                      33 (16:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:106,c:16                     
+                                                                                                                  
+                      33 (16:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:106,c:26                     
+                                                                                                                  
+                      33 (16:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:106,c:21                     
+                                                                                                                  
+                      33 (16:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:102,c:19                     
+                                                                                                                  
+                      33 (16:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:119,c:11                     
+                                                                                                                  
+u                     34 (17:FALSE)    --              FALSE  ../SobelFilter.cpp,l:70,c:22 -> c:24                
+                                                                                                                  
+val.value[0][0]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][1]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][2]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][3]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][4]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][5]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][6]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][7]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][8]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][0]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][1]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][2]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][3]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][4]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][5]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][6]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][7]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][8]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][0]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][1]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][2]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][3]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][4]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][5]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][6]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][7]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][8]       34 (17:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+v                     34 (17:FALSE)    --              FALSE  ../SobelFilter.cpp,l:69,c:21 -> c:40                
+                                                                                                                  
+                      34 (17:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:69,c:38                      
+                                                                                                                  
+val.value[0][0]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][1]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][2]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][3]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][4]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][5]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][6]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][7]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[0][8]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][0]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][1]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][2]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][3]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][4]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][5]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][6]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][7]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[1][8]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][0]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][1]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][2]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][3]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][4]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][5]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][6]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][7]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+val.value[2][8]       35 (18:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:30,c:22->f:/usr/cadtool/cad  
+                                                                                                                  
+u                     35 (18:FALSE)    --              FALSE  ../SobelFilter.cpp,l:70,c:22 -> c:41                
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:15                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:87,c:15                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      35 (18:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+i_rgb.m_busy_req_0.g  36 (19:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb                 38 (21:TRUE)     --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+do_filter::get        38 (21:TRUE)     --              FALSE  ../SobelFilter.cpp,l:32,c:19 mapped                 
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:18                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:87,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      38 (21:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:70,c:39                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:22                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+i_rgb.m_stall_reg_fu  39 (22:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.data.get::nb_g  39 (22:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_stall_reg.ge  39 (22:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_busy_req_0.g  39 (22:FALSE)    --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+get::nb_get::operato  39 (22:FALSE)    --              FALSE  ../SobelFilter.cpp,l:78,c:18                        
+                                                                                                                  
+operator=::cynw_ufix  39 (22:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:85,c:27->f:/usr/cadtool/c  
+                                                                                                                  
+operator=::cynw_ufix  39 (22:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:86,c:27->f:/usr/cadtool/c  
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:86,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:85,c:15                      
+                                                                                                                  
+operator=::cynw_ufix  39 (22:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:87,c:27->f:/usr/cadtool/c  
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+                      39 (22:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:87,c:15                      
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:85,c:15                                         
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+f:../SobelFilter.cpp  39 (22:FALSE)    --              FALSE  & l:86,c:15 & l:85,c:15                             
+                                                                                                                  
+                      41 (24:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:70,c:30                      
+                                                                                                                  
+                      44 (26:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:69,c:29                      
+                                                                                                                  
+sum_r.value.cynw_ufi  44 (26:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:91,c:23->f:/usr/cadtool/c  
+                                                                                                                  
+sum_g.value.cynw_ufi  44 (26:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:92,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+sum_b.value.cynw_ufi  44 (26:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:93,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+x                     44 (26:FALSE)    --              FALSE  ../SobelFilter.cpp,l:94,c:14 -> c:15                
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:115,c:20                     
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:109,c:20                     
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:100,c:11                     
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:103,c:19                     
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:115,c:26                     
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:109,c:25                     
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:115,c:30                     
+                                                                                                                  
+                      46 (28:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:109,c:29                     
+                                                                                                                  
+Gaussian.value        47 (29:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:37,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+sum_r.value           47 (29:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:91,c:23->f:/usr/cadtool/c  
+                                                                                                                  
+sum_g.value           47 (29:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:92,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+sum_b.value           47 (29:FALSE)    --              FALSE  @(f:../SobelFilter.cpp,l:93,c:24->f:/usr/cadtool/c  
+                                                                                                                  
+x                     47 (29:FALSE)    --              FALSE  ../SobelFilter.cpp,l:94,c:14 -> c:22                
+                                                                                                                  
+                      47 (29:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:95,c:36                      
+                                                                                                                  
+                      48 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      48 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:95,c:36                      
+                                                                                                                  
+Gaussian              48 (29:TRUE)     --              FALSE  ../SobelFilter.cpp,l:37,c:24                        
+                                                                                                                  
+                      48 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+operator*             48 (29:TRUE)     --              FALSE  ../SobelFilter.cpp,l:95,c:29                        
+                                                                                                                  
+operator+=::operator  48 (29:TRUE)     --              FALSE  ../SobelFilter.cpp,l:95,c:14                        
+                                                                                                                  
+                      48 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      49 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:94,c:23                      
+                                                                                                                  
+                      49 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:96,c:36                      
+                                                                                                                  
+                      49 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+operator*             49 (29:TRUE)     --              FALSE  ../SobelFilter.cpp,l:96,c:29                        
+                                                                                                                  
+operator+=::operator  49 (29:TRUE)     --              FALSE  ../SobelFilter.cpp,l:96,c:14                        
+                                                                                                                  
+                      49 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      49 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      50 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:97,c:36                      
+                                                                                                                  
+                      50 (29:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:94,c:19                      
+                                                                                                                  
+operator*             50 (29:TRUE)     --              FALSE  ../SobelFilter.cpp,l:97,c:29                        
+                                                                                                                  
+operator+=::operator  50 (29:TRUE)     --              FALSE  ../SobelFilter.cpp,l:97,c:14                        
+                                                                                                                  
+                      53 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:116,c:20                     
+                                                                                                                  
+                      53 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:110,c:20                     
+                                                                                                                  
+buffer                57 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:103,c:16          
+                                                                                                                  
+                      57 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:114,c:20                     
+                                                                                                                  
+                      57 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:108,c:20                     
+                                                                                                                  
+buffer                57 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:102,c:16          
+                                                                                                                  
+                      57 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:104,c:19                     
+                                                                                                                  
+                      61 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:116,c:26                     
+                                                                                                                  
+                      61 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:110,c:25                     
+                                                                                                                  
+buffer                61 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:115,c:16          
+                                                                                                                  
+buffer                61 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:109,c:16          
+                                                                                                                  
+buffer                61 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:104,c:16          
+                                                                                                                  
+buffer                61 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:103,c:16          
+                                                                                                                  
+                      65 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:114,c:26                     
+                                                                                                                  
+                      65 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:108,c:25                     
+                                                                                                                  
+                      65 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:114,c:30                     
+                                                                                                                  
+                      65 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:108,c:29                     
+                                                                                                                  
+buffer                65 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:104,c:16          
+                                                                                                                  
+                      69 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+                      69 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:116,c:30                     
+                                                                                                                  
+                      69 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:110,c:29                     
+                                                                                                                  
+buffer                69 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:114,c:16          
+                                                                                                                  
+buffer                69 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:108,c:16          
+                                                                                                                  
+                      73 (32:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:100,c:5                      
+                                                                                                                  
+buffer                73 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:116,c:16          
+                                                                                                                  
+buffer                73 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:110,c:16          
+                                                                                                                  
+buffer                73 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:115,c:16          
+                                                                                                                  
+buffer                73 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:109,c:16          
+                                                                                                                  
+u                     78 (33:TRUE)     --              FALSE  ../SobelFilter.cpp,l:240,c:15 -> c:16               
+                                                                                                                  
+sum_r                 78 (33:TRUE)     --              FALSE  ../SobelFilter.cpp,l:237,c:11 -> c:16               
+                                                                                                                  
+sum_g                 78 (33:TRUE)     --              FALSE  ../SobelFilter.cpp,l:238,c:11 -> c:16               
+                                                                                                                  
+sum_b                 78 (33:TRUE)     --              FALSE  ../SobelFilter.cpp,l:239,c:11 -> c:16               
+                                                                                                                  
+u                     79 (46:TRUE)     --              FALSE  ../SobelFilter.cpp,l:185,c:15 -> c:16               
+                                                                                                                  
+sum_r                 79 (46:TRUE)     --              FALSE  ../SobelFilter.cpp,l:182,c:11 -> c:16               
+                                                                                                                  
+sum_g                 79 (46:TRUE)     --              FALSE  ../SobelFilter.cpp,l:183,c:11 -> c:16               
+                                                                                                                  
+sum_b                 79 (46:TRUE)     --              FALSE  ../SobelFilter.cpp,l:184,c:11 -> c:16               
+                                                                                                                  
+u                     80 (58:TRUE)     --              FALSE  ../SobelFilter.cpp,l:129,c:15 -> c:16               
+                                                                                                                  
+sum_r                 80 (58:TRUE)     --              FALSE  ../SobelFilter.cpp,l:126,c:11 -> c:16               
+                                                                                                                  
+sum_g                 80 (58:TRUE)     --              FALSE  ../SobelFilter.cpp,l:127,c:11 -> c:16               
+                                                                                                                  
+sum_b                 80 (58:TRUE)     --              FALSE  ../SobelFilter.cpp,l:128,c:11 -> c:16               
+                                                                                                                  
+buffer                77 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:116,c:16          
+                                                                                                                  
+buffer                77 (32:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:110,c:16          
+                                                                                                                  
+j                     82 (34:FALSE)    --              FALSE  ../SobelFilter.cpp,l:241,c:18 -> c:19               
+                                                                                                                  
+buffer                82 (34:FALSE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:240,c:7           
+                                                                                                                  
+sum_r                 82 (34:FALSE)    --              FALSE  ../SobelFilter.cpp,l:237,c:11 -> l:240,c:7          
+                                                                                                                  
+sum_g                 82 (34:FALSE)    --              FALSE  ../SobelFilter.cpp,l:238,c:11 -> l:240,c:7          
+                                                                                                                  
+sum_b                 82 (34:FALSE)    --              FALSE  ../SobelFilter.cpp,l:239,c:11 -> l:240,c:7          
+                                                                                                                  
+u                     82 (34:FALSE)    --              FALSE  ../SobelFilter.cpp,l:240,c:15 -> c:24               
+                                                                                                                  
+sharpening            82 (34:FALSE)    --              FALSE  ../SobelFilter.cpp,l:29,c:11 -> l:240,c:7           
+                                                                                                                  
+                      82 (34:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:243,c:33                     
+                                                                                                                  
+                      82 (34:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:240,c:25                     
+                                                                                                                  
+j                     83 (47:FALSE)    --              FALSE  ../SobelFilter.cpp,l:186,c:18 -> c:19               
+                                                                                                                  
+buffer                83 (47:FALSE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:185,c:7           
+                                                                                                                  
+sharpening            83 (47:FALSE)    --              FALSE  ../SobelFilter.cpp,l:29,c:11 -> l:185,c:7           
+                                                                                                                  
+sum_r                 83 (47:FALSE)    --              FALSE  ../SobelFilter.cpp,l:182,c:11 -> l:185,c:7          
+                                                                                                                  
+sum_g                 83 (47:FALSE)    --              FALSE  ../SobelFilter.cpp,l:183,c:11 -> l:185,c:7          
+                                                                                                                  
+sum_b                 83 (47:FALSE)    --              FALSE  ../SobelFilter.cpp,l:184,c:11 -> l:185,c:7          
+                                                                                                                  
+u                     83 (47:FALSE)    --              FALSE  ../SobelFilter.cpp,l:185,c:15 -> c:24               
+                                                                                                                  
+                      83 (47:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:188,c:33                     
+                                                                                                                  
+                      83 (47:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:185,c:25                     
+                                                                                                                  
+j                     84 (59:FALSE)    --              FALSE  ../SobelFilter.cpp,l:130,c:18 -> c:19               
+                                                                                                                  
+buffer                84 (59:FALSE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:129,c:7           
+                                                                                                                  
+sharpening            84 (59:FALSE)    --              FALSE  ../SobelFilter.cpp,l:29,c:11 -> l:129,c:7           
+                                                                                                                  
+sum_r                 84 (59:FALSE)    --              FALSE  ../SobelFilter.cpp,l:126,c:11 -> l:129,c:7          
+                                                                                                                  
+sum_g                 84 (59:FALSE)    --              FALSE  ../SobelFilter.cpp,l:127,c:11 -> l:129,c:7          
+                                                                                                                  
+sum_b                 84 (59:FALSE)    --              FALSE  ../SobelFilter.cpp,l:128,c:11 -> l:129,c:7          
+                                                                                                                  
+u                     84 (59:FALSE)    --              FALSE  ../SobelFilter.cpp,l:129,c:15 -> c:24               
+                                                                                                                  
+                      84 (59:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:131,c:33                     
+                                                                                                                  
+                      84 (59:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:129,c:25                     
+                                                                                                                  
+buffer                86 (35:FALSE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:244,c:30          
+                                                                                                                  
+sum_r                 86 (35:FALSE)    --              FALSE  ../SobelFilter.cpp,l:237,c:11 -> l:242,c:14         
+                                                                                                                  
+sum_g                 86 (35:FALSE)    --              FALSE  ../SobelFilter.cpp,l:238,c:11 -> l:243,c:14         
+                                                                                                                  
+sum_b                 86 (35:FALSE)    --              FALSE  ../SobelFilter.cpp,l:239,c:11 -> l:244,c:14         
+                                                                                                                  
+j                     86 (35:FALSE)    --              FALSE  ../SobelFilter.cpp,l:241,c:18 -> c:26               
+                                                                                                                  
+sharpening            86 (35:FALSE)    --              FALSE  ../SobelFilter.cpp,l:29,c:11 -> l:242,c:59          
+                                                                                                                  
+buffer                87 (48:FALSE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:189,c:30          
+                                                                                                                  
+sharpening            87 (48:FALSE)    --              FALSE  ../SobelFilter.cpp,l:29,c:11 -> l:187,c:59          
+                                                                                                                  
+sum_r                 87 (48:FALSE)    --              FALSE  ../SobelFilter.cpp,l:182,c:11 -> l:187,c:14         
+                                                                                                                  
+sum_g                 87 (48:FALSE)    --              FALSE  ../SobelFilter.cpp,l:183,c:11 -> l:188,c:14         
+                                                                                                                  
+sum_b                 87 (48:FALSE)    --              FALSE  ../SobelFilter.cpp,l:184,c:11 -> l:189,c:14         
+                                                                                                                  
+j                     87 (48:FALSE)    --              FALSE  ../SobelFilter.cpp,l:186,c:18 -> c:26               
+                                                                                                                  
+buffer                88 (60:FALSE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:133,c:30          
+                                                                                                                  
+sharpening            88 (60:FALSE)    --              FALSE  ../SobelFilter.cpp,l:29,c:11 -> l:131,c:55          
+                                                                                                                  
+sum_r                 88 (60:FALSE)    --              FALSE  ../SobelFilter.cpp,l:126,c:11 -> l:131,c:14         
+                                                                                                                  
+sum_g                 88 (60:FALSE)    --              FALSE  ../SobelFilter.cpp,l:127,c:11 -> l:132,c:14         
+                                                                                                                  
+sum_b                 88 (60:FALSE)    --              FALSE  ../SobelFilter.cpp,l:128,c:11 -> l:133,c:14         
+                                                                                                                  
+j                     88 (60:FALSE)    --              FALSE  ../SobelFilter.cpp,l:130,c:18 -> c:26               
+                                                                                                                  
+                      88 (60:FALSE)    --              FALSE  f:../SobelFilter.cpp,l:131,c:37                     
+                                                                                                                  
+                      90 (35:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:243,c:37                     
+                                                                                                                  
+                      90 (35:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:243,c:41                     
+                                                                                                                  
+                      91 (48:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:188,c:37                     
+                                                                                                                  
+                      91 (48:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:188,c:41                     
+                                                                                                                  
+                      92 (60:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:132,c:33                     
+                                                                                                                  
+sharpening            92 (60:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+sharpening            92 (60:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+buffer                92 (60:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:131,c:30          
+                                                                                                                  
+                      92 (60:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:130,c:27                     
+                                                                                                                  
+                      94 (35:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:242,c:33                     
+                                                                                                                  
+sharpening            94 (35:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+sharpening            94 (35:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+                      94 (35:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:241,c:27                     
+                                                                                                                  
+                      95 (48:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:187,c:33                     
+                                                                                                                  
+sharpening            95 (48:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+sharpening            95 (48:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+                      95 (48:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:186,c:27                     
+                                                                                                                  
+                      96 (60:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:133,c:33                     
+                                                                                                                  
+                      96 (60:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:132,c:37                     
+                                                                                                                  
+buffer                96 (60:TRUE)     --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:132,c:30          
+                                                                                                                  
+sharpening            96 (60:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+                      98 (35:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:242,c:37                     
+                                                                                                                  
+                      98 (35:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:242,c:41                     
+                                                                                                                  
+sharpening            98 (35:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+                      99 (48:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:187,c:37                     
+                                                                                                                  
+                      99 (48:TRUE)     --              FALSE  f:../SobelFilter.cpp,l:187,c:41                     
+                                                                                                                  
+sharpening            99 (48:TRUE)     --              FALSE  ../SobelFilter.cpp,l:29,c:11                        
+                                                                                                                  
+                      100 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:133,c:37                     
+                                                                                                                  
+buffer                100 (60:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:133,c:30          
+                                                                                                                  
+buffer                100 (60:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:132,c:30          
+                                                                                                                  
+                      102 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:244,c:33                     
+                                                                                                                  
+buffer                102 (35:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:243,c:30          
+                                                                                                                  
+buffer                102 (35:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:242,c:30          
+                                                                                                                  
+                      103 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:189,c:33                     
+                                                                                                                  
+buffer                103 (48:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:188,c:30          
+                                                                                                                  
+buffer                103 (48:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:187,c:30          
+                                                                                                                  
+                      104 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:131,c:41                     
+                                                                                                                  
+buffer                104 (60:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:133,c:30          
+                                                                                                                  
+                      104 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:131,c:19                     
+                                                                                                                  
+                      104 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:136,c:15                     
+                                                                                                                  
+                      104 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:138,c:21                     
+                                                                                                                  
+                      104 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:138,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  104 (60:TRUE)    --              FALSE  & c:10 & l:138,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  104 (60:TRUE)    --              FALSE  & l:138,c:13 & l:137,c:16 & c:10 & l:136,c:7        
+                                                                                                                  
+                      106 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:244,c:37                     
+                                                                                                                  
+                      106 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:244,c:41                     
+                                                                                                                  
+buffer                106 (35:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:243,c:30          
+                                                                                                                  
+                      107 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:189,c:37                     
+                                                                                                                  
+                      107 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:189,c:41                     
+                                                                                                                  
+buffer                107 (48:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:188,c:30          
+                                                                                                                  
+                      108 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:129,c:20                     
+                                                                                                                  
+                      108 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:132,c:41                     
+                                                                                                                  
+                      108 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:132,c:19                     
+                                                                                                                  
+                      108 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:143,c:15                     
+                                                                                                                  
+                      108 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:145,c:21                     
+                                                                                                                  
+                      108 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:145,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  108 (60:TRUE)    --              FALSE  & c:10 & l:145,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  108 (60:TRUE)    --              FALSE  & l:145,c:13 & l:144,c:16 & c:10 & l:143,c:7        
+                                                                                                                  
+buffer                110 (35:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:244,c:30          
+                                                                                                                  
+buffer                111 (48:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:189,c:30          
+                                                                                                                  
+                      112 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:130,c:23                     
+                                                                                                                  
+                      112 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:133,c:41                     
+                                                                                                                  
+                      112 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:133,c:19                     
+                                                                                                                  
+                      112 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:151,c:15                     
+                                                                                                                  
+                      112 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:153,c:21                     
+                                                                                                                  
+                      112 (60:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:153,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  112 (60:TRUE)    --              FALSE  & c:10 & l:153,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  112 (60:TRUE)    --              FALSE  & l:153,c:13 & l:152,c:16 & c:10 & l:151,c:7        
+                                                                                                                  
+                      114 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:242,c:45                     
+                                                                                                                  
+buffer                114 (35:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:244,c:30          
+                                                                                                                  
+                      114 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:242,c:19                     
+                                                                                                                  
+                      114 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:247,c:15                     
+                                                                                                                  
+                      114 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:249,c:21                     
+                                                                                                                  
+                      114 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:249,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  114 (35:TRUE)    --              FALSE  & c:10 & l:249,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  114 (35:TRUE)    --              FALSE  & l:249,c:13 & l:248,c:16 & c:10 & l:247,c:7        
+                                                                                                                  
+                      115 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:187,c:45                     
+                                                                                                                  
+buffer                115 (48:TRUE)    --              FALSE  ../SobelFilter.cpp,l:33,c:18 -> l:189,c:30          
+                                                                                                                  
+                      115 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:187,c:19                     
+                                                                                                                  
+                      115 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:192,c:15                     
+                                                                                                                  
+                      115 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:194,c:21                     
+                                                                                                                  
+                      115 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:194,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  115 (48:TRUE)    --              FALSE  & c:10 & l:194,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  115 (48:TRUE)    --              FALSE  & l:194,c:13 & l:193,c:16 & c:10 & l:192,c:7        
+                                                                                                                  
+                      119 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:240,c:20                     
+                                                                                                                  
+                      119 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:243,c:45                     
+                                                                                                                  
+                      119 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:243,c:19                     
+                                                                                                                  
+                      119 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:254,c:15                     
+                                                                                                                  
+                      119 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:256,c:21                     
+                                                                                                                  
+                      119 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:256,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  119 (35:TRUE)    --              FALSE  & c:10 & l:256,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  119 (35:TRUE)    --              FALSE  & l:256,c:13 & l:255,c:16 & c:10 & l:254,c:7        
+                                                                                                                  
+                      120 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:185,c:20                     
+                                                                                                                  
+                      120 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:188,c:45                     
+                                                                                                                  
+                      120 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:188,c:19                     
+                                                                                                                  
+                      120 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:199,c:15                     
+                                                                                                                  
+                      120 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:201,c:21                     
+                                                                                                                  
+                      120 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:201,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  120 (48:TRUE)    --              FALSE  & c:10 & l:201,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  120 (48:TRUE)    --              FALSE  & l:201,c:13 & l:200,c:16 & c:10 & l:199,c:7        
+                                                                                                                  
+                      124 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:241,c:23                     
+                                                                                                                  
+                      124 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:244,c:45                     
+                                                                                                                  
+                      124 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:244,c:19                     
+                                                                                                                  
+                      124 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:262,c:15                     
+                                                                                                                  
+                      124 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:264,c:21                     
+                                                                                                                  
+                      124 (35:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:264,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  124 (35:TRUE)    --              FALSE  & c:10 & l:264,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  124 (35:TRUE)    --              FALSE  & l:264,c:13 & l:263,c:16 & c:10 & l:262,c:7        
+                                                                                                                  
+                      125 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:186,c:23                     
+                                                                                                                  
+                      125 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:189,c:45                     
+                                                                                                                  
+                      125 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:189,c:19                     
+                                                                                                                  
+                      125 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:207,c:15                     
+                                                                                                                  
+                      125 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:209,c:21                     
+                                                                                                                  
+                      125 (48:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:209,c:21                     
+                                                                                                                  
+f:../SobelFilter.cpp  125 (48:TRUE)    --              FALSE  & c:10 & l:209,c:13                                 
+                                                                                                                  
+f:../SobelFilter.cpp  125 (48:TRUE)    --              FALSE  & l:209,c:13 & l:208,c:16 & c:10 & l:207,c:7        
+                                                                                                                  
+                      126 (64:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:163,c:26                     
+                                                                                                                  
+                      138 (65:FALSE)   --              FALSE  f:../SobelFilter.cpp,l:163,c:39                     
+                                                                                                                  
+o_result.data.put::n  138 (65:FALSE)   --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result              138 (65:FALSE)   --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+o_result.m_req.m_tri  138 (65:FALSE)   --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                      140 (39:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:274,c:26                     
+                                                                                                                  
+                      141 (52:TRUE)    --              FALSE  f:../SobelFilter.cpp,l:219,c:26                     
+                                                                                                                  
+o_result              146 (67:TRUE)    --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+do_filter::put        146 (67:TRUE)    --              FALSE  ../SobelFilter.cpp,l:32,c:19 mapped                 
+                                                                                                                  
+                      148 (40:FALSE)   --              FALSE  f:../SobelFilter.cpp,l:274,c:39                     
+                                                                                                                  
+o_result.data.put::n  148 (40:FALSE)   --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result              148 (40:FALSE)   --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+o_result.m_req.m_tri  148 (40:FALSE)   --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                      149 (53:FALSE)   --              FALSE  f:../SobelFilter.cpp,l:219,c:39                     
+                                                                                                                  
+o_result.data.put::n  149 (53:FALSE)   --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result              149 (53:FALSE)   --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+o_result.m_req.m_tri  149 (53:FALSE)   --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result              156 (42:TRUE)    --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+do_filter::put        156 (42:TRUE)    --              FALSE  ../SobelFilter.cpp,l:32,c:19 mapped                 
+                                                                                                                  
+o_result              157 (55:TRUE)    --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+do_filter::put        157 (55:TRUE)    --              FALSE  ../SobelFilter.cpp,l:32,c:19 mapped                 
+                                                                                                                  
+i                     164 (44:TRUE)    --              FALSE  ../SobelFilter.cpp,l:41,c:9 -> l:284,c:7            
+                                                                                                                  
+i                     167 (32:FALSE)   --              FALSE  ../SobelFilter.cpp,l:41,c:9                         
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : o_result_gen_stalling                                                                      
+--------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+o_result.vld.o_resul  4 (3:TRUE)       --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.busy.o_resu  5 (4:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.gen_stallin  5 (4:FALSE)      --              FALSE  ../SobelFilter.h,l:19,c:28                          
+                                                                                                                  
+o_result.m_stalling.  5 (4:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : o_result_gen_unacked_req                                                                   
+-----------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+o_result.m_unacked_r  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_stalling.  8 (7:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+o_result.m_unacked_r  8 (7:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:19,c:28->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : i_rgb_gen_do_stall_reg_full                                                                
+--------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+i_rgb.m_stall_reg_fu  4 (3:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_stalling.i_r  8 (7:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_data_is_vali  8 (7:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.gen_do_stall_r  8 (7:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_stall_reg_fu  8 (7:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : i_rgb_gen_do_reg_vld                                                                       
+-------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+i_rgb.m_vld_reg.i_rg  5 (4:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb                 7 (6:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_vld_reg.i_rg  8 (7:TRUE)       --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_busy_interna  9 (8:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.vld.i_rgb.gen_  9 (8:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.gen_do_reg_vld  9 (8:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_vld_reg.i_rg  9 (8:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : i_rgb_gen_busy                                                                             
+-------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+i_rgb.vld.i_rgb.gen_  4 (3:TRUE)       --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_stall_reg_fu  6 (5:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_unvalidated_  6 (5:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_busy_req_0.i  6 (5:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_data_is_inva  6 (5:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.gen_busy        6 (5:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.gen_busy        6 (5:FALSE)      --              FALSE  ../SobelFilter.h,l:18,c:26                          
+                                                                                                                  
+i_rgb.m_data_is_inva  6 (5:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_busy_interna  7 (6:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.busy.i_rgb.gen  7 (6:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_data_is_vali  7 (6:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+i_rgb.m_data_is_inva  7 (6:FALSE)      --              FALSE  @(f:../SobelFilter.h,l:18,c:26->f:/usr/cadtool/cad  
+                                                                                                                  
+                                                                                                                  
