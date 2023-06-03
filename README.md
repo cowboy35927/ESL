@@ -1,12 +1,31 @@
-# ESL
-git clone risvp and sw
+# ESL Final project
+HLS:
+git clone Guassian_sharpen_filter
+$ cd $EE6470
+
+$ cd Guassian_sharpen_filter
+
+$ cd stratus
+
+$ make sim_V
+or 
+$ make sim_V_BASIC
+or 
+$ make sim_V_DPA
+or 
+$ make sim_V_PIPELINE
+or 
+$ make sim_V_UNROLL_ALL
+RISCV-VP:
+
+git clone vp and sw
 First:
 
-Remember to build the "basic-acc" platform of riscv-vp:
+Remember to build the "tiny32-mc(or tiny32-mc-singlecore)" platform of riscv-vp:
 
-Add "subdirs(basic-acc)" to $EE6470/riscv-vp/vp/src/platform/CMakeLists.txt and run the following instructions:
+Add "subdirs(tiny32-mc(or tiny32-mc-singlecore))" to $EE6470/riscv-vp/vp/src/platform/CMakeLists.txt and run the following instructions:
 
-$ cd $EE6470。
+$ cd $EE6470
 
 $ cd riscv-vp/vp/build
 
@@ -22,6 +41,6 @@ $ cd $EE6470.
 
 $ cd riscv-vp/sw.
 
-$ cd basic-Filter-256.
+$ cd basic-Gussian-Sharpen(basic-Gussian-Sharpen-singlecore).
 
 $ make
